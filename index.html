@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--meta tags-->
     <meta charset="UTF-8">
@@ -13,34 +14,60 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <h1 class="heading">
         Find the origin!
-      </h1>
-      <div class="backgroud-img">
-          <img src="" alt="">
-       <div class="game-space">
-        <div class="intro">
-          <p>
-            This game will test your general knowledge!
-          </p>
-          <br>
-          <p>
-            How much do you know about the origin of different things around the world?
-          </p>
-          <br>
-          <p>
-            Let's find out!!!
-          </p>
+    </h1>
+    <div class="backgroud-img">
+        <img src="" alt="">
+        <div class="game-space">
+            <div class="intro">
+                <p>
+                    This game will test your general knowledge!
+                </p>
+                <br>
+                <p>
+                    How much do you know about the origin of different things around the world?
+                </p>
+                <br>
+                <p>
+                    Let's find out!!!
+                </p>
+            </div>
+            <div class="btn-start-box" id="button-start">
+                <!--trigger modal-->
+                <button type="button" class="btn-start-btn" data-type="modal" data-target="#myModal">
+                    start game
+                </button>
+            </div>
         </div>
-        <div class="btn-start-box" id="button-start">
-          <button class="btn-start-btn">
-            start game
-          </button>
+    </div>
+
+    <!--modal-->
+    <div id="myModal" class="modal-pop-up" role="dialog">
+        <div class="modal-dialog">
+
+            <!--content within modal popup-->
+            <div id="modal-header">
+                <h1>Instructions</h1>
+                <div id="modal-content">
+                    <p>This game contain 10 random questions</p>
+                    <p>You can only choose one answer for each question</p>
+                    <p>Test youself, try not to google!</p>
+                    <p>click continue to start game!</p>
+                    <span class="continue-btn">
+                        <button>continue</button>
+                    </span>
+
+                </div>
+            </div>
+
         </div>
-      </div>
-     </div>
-  
+    </div>
+    <!--end modal here-->
+
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

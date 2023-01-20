@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@500&display=swap');
 
 /*Global styles*/
 
 body {
-  font-family: "Open Sans" sans-serif;
+  font-family: "Nunito" sans-serif;
   color: black;
   text-align: center;
+  background-color: #FFF2F2;
 }
 
 .backgroud-img {
@@ -15,8 +16,47 @@ body {
   }
   
   h1 {
-    font-family: "Montserrat";
+    font-family: "Roboto", sans-serif;
     font-size: 60px;
+  }
+  
+  /*game box edits*/
+  .game-space {
+    width: 60%;
+    margin: auto;
+    background-color:#E5E0FF;
+    height: 75vh;
+    box-sizing: border-box;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 5px 5px 5px #E5E0FF;
+    padding: 1rem;
+  }
+  
+  .intro {
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    padding: 2%;
+  
+  }
+  
+  .btn-start-box {
+    width: 20%;
+    height: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .btn-start-btn {
+    width: 70%;
+    height: 40%;
+    bottom: 0;
+    display: block;
+    border-radius: 10px;
+    background-color: #8EA7E9;
+    box-shadow: 3px 3px black inset;
   }
   
   
