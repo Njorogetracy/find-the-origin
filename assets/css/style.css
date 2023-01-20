@@ -53,10 +53,52 @@ body {
     width: 70%;
     height: 40%;
     bottom: 0;
+    font-family: "Nunito" sans-serif;
+    font-size: 20px;
     display: block;
     border-radius: 10px;
     background-color: #8EA7E9;
     box-shadow: 3px 3px black inset;
   }
+
+  /*modal pop up styles*/
+
+  .modal-pop-up {
+    /* display: none; */
+    width: 60%;
+    height: 80%;
+    box-sizing: border-box;
+    align-items: center;
+    background-color:rgba(229,224,255,0.7);
+    margin: auto;
+  }
+
+  #modal-header {
+    font-family: "Roboto" sans-serif;
+  }
+
+  #modal-content {
+    font-family: "Nunito" sans-serif;
+    font-size: 30px;
+  }
   
+  .continue-btn {
+    width: 20%;
+    height: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .btn-continue-btn {
+    width: 70%;
+    height: 40%;
+    bottom: 0;
+    font-family: "Nunito" sans-serif;
+    font-size: 20px;
+    display: block;
+    border-radius: 10px;
+    background-color: #8EA7E9;
+    box-shadow: 3px 3px black inset;
+  }
   
