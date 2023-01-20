@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Open+Sans&display=swap');
+
+/*Global styles*/
+
+body {
+  font-family: "Open Sans" sans-serif;
+  color: black;
+  text-align: center;
+}
+
