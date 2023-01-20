@@ -8,3 +8,15 @@ body {
   text-align: center;
 }
 
+.backgroud-img {
+    background-image: url("assets/images/pexels-nataliya-vaitkevich-7236026.jpg");
+    object-fit: cover;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-family: "Montserrat";
+    font-size: 60px;
+  }
+  
+  
