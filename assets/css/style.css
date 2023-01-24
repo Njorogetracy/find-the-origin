@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
 
 /*Global styles*/
 
 body {
-  font-family: "Nunito" sans-serif;
+  font-family: "Courrier Prime" sans-serif;
   color: black;
   text-align: center;
   background-color: #FFF2F2;
@@ -16,7 +17,7 @@ body {
   }
   
   h1 {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Courier Prime', monospace;
     font-size: 60px;
   }
   
@@ -35,31 +36,20 @@ body {
   
   .intro {
     display: inline-block;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Courier Prime', monospace;
     font-size: 30px;
     padding: 2%;
   
   }
   
-  .btn-start-box {
-    width: 20%;
-    height: 20%;
+  /* .btn-start-box {
     margin: auto;
-    display: flex;
-    justify-content: flex-end;
   }
   
   .btn-start-btn {
-    width: 70%;
-    height: 40%;
     bottom: 0;
-    font-family: "Nunito" sans-serif;
-    font-size: 20px;
-    display: block;
-    border-radius: 10px;
-    background-color: #8EA7E9;
-    box-shadow: 3px 3px black inset;
-  }
+    font-family: 'Courier Prime', monospace;
+  } */
 
   /*modal pop up styles*/
 
@@ -74,11 +64,11 @@ body {
   }
 
   #modal-header {
-    font-family: "Roboto" sans-serif;
+    font-family: 'Courier Prime', monospace;
   }
 
   #modal-content {
-    font-family: "Nunito" sans-serif;
+    font-family: 'Courier Prime', monospace;
     font-size: 30px;
   }
   
@@ -94,7 +84,7 @@ body {
     width: 70%;
     height: 40%;
     bottom: 0;
-    font-family: "Nunito" sans-serif;
+    font-family: 'Courier Prime', monospace;
     font-size: 20px;
     display: block;
     border-radius: 10px;
