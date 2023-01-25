@@ -4,7 +4,7 @@
 /*Global styles*/
 
 body {
-  font-family: "Courrier Prime" sans-serif;
+  font-family: "Courrier Prime"sans-serif;
   color: black;
   text-align: center;
   background-color: #FFF2F2;
@@ -16,91 +16,80 @@ body {
 }
 
 .backgroud-img {
-    background-image: url("assets/images/pexels-nataliya-vaitkevich-7236026.jpg");
-    object-fit: cover;
-    box-sizing: border-box;
-  }
-  
-  h1 {
-    font-family: 'Courier Prime', monospace;
-    font-size: 60px;
-    text-align: center;
-    color: white;
-    font-weight: 400;
-  }
-  
-  /*game box edits*/
-  .game-space {
-    width: 60%;
-    margin: auto;
-    background-color: RGBA(16,0,0,.8);
-    height: 75vh;
-    box-sizing: border-box;
-    border-radius: 10px;
-    align-items: center;
-    box-shadow: 5px 5px 5px #00E7FF;
-    padding: 1rem;
-  }
-  
-  .intro {
-    display: inline-block;
-    font-family: 'Courier Prime', monospace;
-    font-size: 30px;
-    padding: 2%;
-    color: white;
-  
-  }
-  
-  .btn-start-box {
-    margin: auto;
-  }
-  
-  .btn-start-btn {
-    font-family: 'Courier Prime', monospace;
-  } 
+  background-image: url("assets/images/pexels-nataliya-vaitkevich-7236026.jpg");
+  object-fit: cover;
+  box-sizing: border-box;
+}
 
-  /*modal pop up styles*/
+h1 {
+  font-family: 'Courier Prime', monospace;
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+}
 
-  .modal {
-    width: 60%;
-    margin: auto;
-    background-color: RGBA(16,0,0,.8);
-    height: 75vh;
-    box-sizing: border-box;
-    border-radius: 10px;
-    align-items: center;
-    box-shadow: 5px 5px 5px #00E7FF;
-    padding: 1rem;
-  }
+/*game box edits*/
+.game-space {
+  width: 60%;
+  margin: auto;
+  background-color: RGBA(16, 0, 0, .8);
+  height: 75vh;
+  box-sizing: border-box;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 5px 5px 5px #00E7FF;
+  padding: 1rem;
+}
 
-  #modal-header {
-    font-family: 'Courier Prime', monospace;
-    color: white;
-  }
+.intro {
+  display: inline-block;
+  font-family: 'Courier Prime', monospace;
+  font-size: 30px;
+  padding: 2%;
+  color: white;
 
-  #modal-content {
-    font-family: 'Courier Prime', monospace;
-    font-size: 30px;
-    color: white;
-  }
+}
+
+.btn-start-box {
+  margin: auto;
+}
+
+.btn-start-btn {
+  font-family: 'Courier Prime', monospace;
+}
+
+/*modal pop up styles*/
+
+.modal {
+  width: 60%;
+  margin: auto;
+  background-color: RGBA(16, 0, 0, .8);
+  height: 75vh;
+  box-sizing: border-box;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 5px 5px 5px #00E7FF;
+  padding: 1rem;
+}
+
+#modal-header {
+  font-family: 'Courier Prime', monospace;
+  color: white;
+}
+
+#modal-content {
+  font-family: 'Courier Prime', monospace;
+  font-size: 30px;
+  color: white;
+}
+
+.continue-btn {
+  margin: auto;
+}
+
+.btn-continue-btn {
+  bottom: 0;
+  font-family: 'Courier Prime', monospace;
   
-  .continue-btn {
-    width: 20%;
-    height: 20%;
-    margin: auto;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .btn-continue-btn {
-    width: 70%;
-    height: 40%;
-    bottom: 0;
-    font-family: 'Courier Prime', monospace;
-    font-size: 20px;
-    display: block;
-    border-radius: 10px;
-    background-color: #8EA7E9;
-    box-shadow: 3px 3px black inset;
-  }
-  
+}
