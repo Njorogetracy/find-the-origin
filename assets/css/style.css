@@ -93,3 +93,26 @@ h1 {
   font-family: 'Courier Prime', monospace;
   
 }
+
+/* Quiz page styles */
+
+.score-area {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #00448c;
+  width: 50%;
+  margin: auto;
+  margin-top: 2rem;
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+  gap: 1rem;
+}
+
+.question-container {
+  font-family: 'Courier New', Courier, monospace;
+  margin: auto;
+}
+
+.question {
+  text-transform: none;
+}
