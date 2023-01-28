@@ -53,16 +53,13 @@
             </div>
             <div class="btn-start-box" id="button-start">
                 <!--trigger modal-->
-                <button type="button" class="btn btn-primary btn-lg"  data-toggle="modal" data-target="#myModal">
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">
                     Start Game
                 </button>
             </div>
-        </div>
-    </div>
-    <!--modal-->
-    <dialog open id="myModal" class="modal fade active">
+            <!--modal-->
+    <!-- <dialog open id="myModal" class="modal"> -->
         <div class="modal-dialog" id="instructions">
-
             <!--content within modal popup-->
             <div id="modal-header">
                 <h1>Instructions</h1>
@@ -71,16 +68,16 @@
                     <p>2. You can only choose one answer for each question</p>
                     <p>3. Test youself, try not to google!</p>
                     <p>4. Click continue to start game!</p>
-                    <span class="continue-btn">
-                        <button class="btn-continue-btn btn-primary btn-lg">continue</button>
-                    </span>
-
+                    <div id="continue-btn">
+                        <button class="continue-btn btn-primary btn-lg" id="continue-game">continue</button>
+                    </div>
                 </div>
             </div>
-
         </div>
-    </dialog>
+    <!-- </dialog> -->
     <!--end modal here-->
+        </div>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -90,6 +87,7 @@
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous">
     </script>
 
+    <script src="assets/js/questions.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
