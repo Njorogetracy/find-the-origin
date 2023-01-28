@@ -82,14 +82,10 @@ h1 {
   color: white;
 }
 
-.continue-btn {
+.close-btn {
   margin: auto;
-}
-
-.btn-continue-btn {
   bottom: 0;
   font-family: 'Courier Prime', monospace;
-  
 }
 
 /* Quiz page styles */
