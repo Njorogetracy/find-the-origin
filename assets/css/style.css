@@ -71,6 +71,13 @@ h1 {
   padding: 1rem;
 }
 
+#instructions {
+  display: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  color: white;
+}
+
 #modal-header {
   font-family: 'Courier Prime', monospace;
   color: white;
