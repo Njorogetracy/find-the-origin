@@ -29,7 +29,7 @@
     </h1>
     <div class="backgroud-img">
         <div class="game-space container-fluid col-6 text-center">
-            <div id="intro">
+            <div id="intro" class="intro">
                 <p>
                     This game will test your general knowledge!
                 </p>
@@ -43,7 +43,7 @@
                 </p>
             </div>
             <div class="btn-rule-box" id="button-rule">
-                <!--trigger modal-->
+                <!--trigger modal for the rules-->
                 <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">
                     Rules
                 </button>
@@ -57,8 +57,7 @@
                 </a>
             </div>
             <!--modal-->
-            <!-- <div id="myModal" class="modal" role="dialog">  -->
-            <div class="modal-dialog" id="instructions">
+            <div id="instructions">
                 <!--content within modal popup-->
                 <div id="modal-header">
                     <h1>Instructions</h1>
@@ -68,12 +67,12 @@
                         <p>3. Test youself, try not to google!</p>
                         <p>4. Click continue to start game!</p>
                         <div id="close-btn">
-                            <button class="close-btn btn btn-primary btn-lg" id="close-rules">close</button>
+                            <button class="close-btn btn btn-primary btn-lg" id="close-rules" data-bs-dismiss="modal"
+                                aria-label="Close">close</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- </div>  -->
             <!--end modal here-->
         </div>
     </div>

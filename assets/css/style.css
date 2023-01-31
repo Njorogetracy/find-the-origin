@@ -76,6 +76,8 @@ h1 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 30px;
   color: white;
+  position: relative;
+  z-index: 4;
 }
 
 #modal-header {
