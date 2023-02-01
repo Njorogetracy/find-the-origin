@@ -11,7 +11,7 @@ let question = [
             {text: 'Norway'},
         ]
     },
-
+  
     {
         question: 'Which of these countries is NOT in Africa?',
         answer: [
@@ -19,10 +19,10 @@ let question = [
             {text: 'Guinea'},
             {text: 'Equatorial Guinea'},
             {text: 'Sao Tome and Principe'},
-
+  
         ]
     },
-
+  
     {
         question: 'Which of these countries is the most densely populated?',
         answer: [
@@ -30,10 +30,10 @@ let question = [
             {text: 'Monaco'},
             {text: 'Singapore', correct: true},
             {text: 'Bahrain'},
-
+  
         ]
     },
-
+  
     {
         question: 'Caberra is the capital city of what country?',
         answer: [
@@ -41,10 +41,10 @@ let question = [
             {text: 'Australia', correct: true},
             {text: 'Scotland'},
             {text: 'Wales'},
-
+  
         ]
     },
-
+  
     {
         question: 'Which is the 2nd most populous country?',
         answer: [
@@ -54,7 +54,7 @@ let question = [
             {text: 'Brazil'},
         ]
     },
-
+  
     {
         question: 'Which country is the source of the White Nile',
         answer: [
@@ -64,7 +64,7 @@ let question = [
             {text: 'Egypt'},
         ]
     },
-
+  
     {
         question: 'Which country is famously known for Hieroglyphics?',
         answer: [
@@ -74,7 +74,7 @@ let question = [
             {text: 'Israel'},
         ]
     },
-
+  
     {
         question: 'Which of the following countries does not qualify to be an enclave',
         answer: [
@@ -84,7 +84,7 @@ let question = [
             {text: 'San Marino'},
         ]
     },
-
+  
     {
         question: 'Which of the following European countries is not landlocked?',
         answer: [
@@ -94,7 +94,7 @@ let question = [
             {text: 'North Macedonia'},
         ]
     },
-
+  
     {
         question: 'Which country is home to the highest mountain in Africa',
         answer: [
@@ -104,7 +104,7 @@ let question = [
             {text: 'Tanzania', correct: true},
         ]
     },
-
+  
     {
         question: 'Which country is the birthplace of ramen noodles?',
         answers: [
@@ -114,7 +114,7 @@ let question = [
             {text: 'South Korea'},
         ]
     },
-
+  
     {
         question: 'Which islands are not located in the Pacific Ocean?',
         answer: [
@@ -124,7 +124,7 @@ let question = [
             {text: 'Kiribati'},
         ]
     },
-
+  
     {
         question: 'Which European country does not use the Euro as its currency?',
         answer: [
@@ -134,7 +134,7 @@ let question = [
             {text: 'Austria'},
         ]
     },
-
+  
     {
         question: 'Which country is home to the Amazon Forest?',
         answer: [
@@ -144,7 +144,7 @@ let question = [
             {text: 'Colombia'},
         ]
     },
-
+  
     {
         question: 'Which is not a Scandinavian country?',
         answer: [
@@ -154,7 +154,7 @@ let question = [
             {text: 'Netherlands', correct: true},
         ]
     },
-
+  
     {
         question: 'Which country is home to the Nobel Peace Prize?',
         ansnwer: [
@@ -164,7 +164,7 @@ let question = [
             {text: 'USA'},
         ]
     },
-
+  
     {
         question: 'In which country is Arabica coffee not grown?',
         answer: [
@@ -174,7 +174,7 @@ let question = [
             {text: 'Uganda', correct: true},
         ]
     },
-
+  
     {
         question: 'Which African country is closest to the Strait of Gilbraltar?',
         answer: [
@@ -184,7 +184,7 @@ let question = [
             {text: 'Libya'},
         ]
     },
-
+  
     {
         queston: 'Which country is home to the International Criminal Court?',
         answer: [
@@ -194,7 +194,7 @@ let question = [
             {text: 'Hungary'}
         ]
     },
-
+  
     {
         queston: 'What country is Mesopotamia, one of the first centers of civilization, today?',
         answer: [
@@ -204,4 +204,4 @@ let question = [
             {text: 'Israel'}
         ]    
     },
-]
+  ]

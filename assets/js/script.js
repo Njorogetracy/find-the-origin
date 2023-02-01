@@ -1,11 +1,11 @@
 //Getting elements from the Dom
 
 let introPage = document.getElementById("intro");
-let ruleModal = document.getElementById("button-rule");
+let myModal = document.getElementById("button-rule");
 let ruleBtn = document.getElementById("instructions");
 let closeModal = document.getElementById("close-rules");
 let rulesText = document.getElementsByClassName("modal-header");
-let startButton = document.getElementById("button-start");
+let startButton = document.getElementById("start-game");
 let quizLoad = document.getElementsByClassName('question-container');
 let quizQuestion = document.getElementById('question');
 let answerButton1 = document.getElementById("answer1");
@@ -15,12 +15,11 @@ let answerButton4 = document.getElementById("answer4");
 let scoreElement = document.getElementsByClassName("scoreArea");
 
 
-//startButton.addEventListener('click', startGame);
-
-let currentQuiz = 0
-let score = 0
-
-startQuiz()
+startButton.addEventListener('click', function() {
+    console.log("you clicked start")
+    startQuiz();
+    
+});
 
 function startQuiz() {
   console.log('game started')
@@ -37,11 +36,11 @@ function startQuiz() {
 }
 
 
-
 // open Modal with instructions and close modal
 
-ruleModal.addEventListener("click", function() {
-  ruleModal.style.display = 'none';
+myModal.addEventListener("click", function() {
+  console.log("you clicked a button")
+  myModal.style.display = 'none';
   introPage.style.display = 'none';
   startButton.style.display = 'none'; 
   instructions.style.display = 'block';
@@ -65,7 +64,7 @@ function closeRules() {
 instructions.style.display = 'none';
 introPage.style.display = 'block';
 startButton.style.display = 'block';
-ruleModal.style.display = 'block';
+myModal.style.display = 'block';
 };
 
 
