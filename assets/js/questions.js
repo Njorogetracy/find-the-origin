@@ -1,6 +1,6 @@
 // Quiz questions
 
-let questions = [
+let question = [
 
     {
         question: 'What country has the longest total coastline (including mainland and offshore islands)?',

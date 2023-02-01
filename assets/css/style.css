@@ -42,7 +42,7 @@ h1 {
   padding: 1rem;
 }
 
-.intro {
+#intro {
   display: inline-block;
   font-family: 'Courier Prime', monospace;
   font-size: 30px;
