@@ -1,108 +1,318 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Let's get quizycall 
+(Developer Hope Tracy Njoroge)
 
-Welcome Hope Tracy ,
+let's get quizycall is an game targeted towards people who love to satisfy their quest for knwoledge. It aims to educate and entertain its users through the questions asked within the quiz.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Resposive image of homepage on different devices with different screen sizes]()
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+[Visit the Let's get quizycall here](https://njorogetracy.github.io/foodies-corner/)
 
-## Gitpod Reminders
+<br>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Table of Content 
 
-`python3 -m http.server`
+1. [Project Goals](#project-goals)
+    - [Site Owner Goals](#site-owner-goal)
+    - [User Goals](#user-goals)
+2. [User Experience](#user-experience)
+    - [Target Audience](#target-audience)
+    - [User Stories](#user-stories)   
+3. [Design](#design)
+    - [Colour](#colour)
+    - [Typography](#typography)
+    - [Wireframes](#wireframes)
+4. [Features](#features)
+5. [Testing](#testing)
+    - [Function Testing](#function-testing)
+    - [Performance](#perfomance)
+    - [Validation](#validation)
+    - [HTML](#HTML)
+    - [CSS](#CSS)
+    - [JS](#JAVASCRIPT)
+    - [Browser Compatibility](#browser-compatibility)
+    - [Bugs](#bugs)
+6.  [Version Control](#version-control)
+7.  [Deployment](#deployment)
+8.  [Credits](#credits)
+9.  [Acknowledgements](#acknowledgements)
 
-A blue button should appear to click: _Make Public_,
+<br>
 
-Another blue button should appear to click: _Open Browser_.
+## Project Goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Let's get quizycall is a quiz website created in partial fulfilment with the second milestone project for Code Institute's Full Stack Software Development course. It was developed out of curiosity to test if people are aware of the history beyond the space they occupy. It tests how much people know about different parts of the world. 
 
-A blue button should appear to click: _Make Public_,
+### Site Owner Goals 
+- Test users knowledge on world geography
+- Provide questions and answers for the users
+- Show rules of the game
+- Show users results once quiz is done
+- Display score as users play
 
-Another blue button should appear to click: _Open Browser_.
+### User Goals
+- 
+- 
+- 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## User Experience
 
-To log into the Heroku toolbelt CLI:
+### Target Audience 
+- People who are curious to satisfy their knowledge
+- People seeking to engage in a new activity
+- People seeking to entertain themselves 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### User Stories 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### First-time User
 
-------
+As a first-time visitor I want to:
 
-## Release History
+1. See rules of the game
+2. Start game
+3. See correct answer and wrong answer after answering
+4. See score as I play the game
+5. Easily navigate through the website
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### Returning User 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+As a returning-user I want to:
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+1. Easily navigate through the website
+2. Easily share the website  with people
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Design 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Colour 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+This website uses a palette of pastel colours that are subtle yet eye catching to attract and keep users in the website. This palette was created using [Colorhunt]() website
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![Image of colour palette from colorhunt.co]()
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+<br>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Typography 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+[Google Fonts]() was used to source the font styles used throughout the website:
+- Courrier Prime: Used for the logo and all headings
+- Courrier Prime: Used for main body text
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+These fonts were chosen to be in order to give the website a simple and clean look. They were also chosen to ensure accessibility and readability 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+<br>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Wireframes 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Wireframes were created using [Balsamiq Wireframing Software](https:/balsamiq.com/)
 
-------
+View wireframes [PDF file here]()
 
-## FAQ about the uptime script
+## Features 
 
-**Why have you added this script?**
+This website consists of two pages. A homepage and the quizpage.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Background Image
 
-**How will this affect me?**
+- Background image for the website
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![Background image]()
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Game container
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+![Game space]()
 
-**So….?**
+### Quiz area
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![Quiz]()
 
-**Can I opt out?**
+### Score Area
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![Score area]()
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+<br>
 
-**Anything more?**
+## Technology Used
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+This website has been written using HTML, CSS, BOOTSTRAP & JAVASCRIPT
 
----
+<br>
 
-Happy coding!
+### Frameworks, Libraries and Programs Used
+- Github: Storing and hosting my code/repository
+- Gitpod: Code editor for writing my code and storing other images/files
+- Font Awesome: For icons used in the site
+- Colorhunt: For choosing the palette to be used in the website
+- Google Fonts: To import the fonts used throughout the site
+- Google DevTools: Used throughout the site's creation to test responsiveness and adjust layout
+- Balsamiq: Wireframe software
+- Am I Responsive: To create a visual of the website across different device sizes
+- Tinypng: resize images 
+- [Pexels](https://www.pexels.com/) For images used in the website
+- [YouTube](https://www.youtube.com/) For inspiration and coding tutorials
+- [W3schools](https://www.w3schools.com/) For coding questions and reference
+- [Freecodecamp](https://www.freecodecamp.org/) For coding questions and reference
+- [Lighthouse](https://developers.google.com/web) To test performance of website
+- [Pair fonts](https://pairfonts.com/) To visualize font pairing
+
+<br>
+
+## Testing 
+
+Testing was performed across a range of devices, including:
+- Lenovo ThinkVision T24i-20 (1920 x 1080)
+- Dell XPS 9315 (1920 x 1200)
+- HP Envy (1920 x 1080)
+- Iphone 13 pro
+- Iphone SE 2020
+
+
+### Function Testing 
+
+
+| Page | Test | Completed |
+| :--- | :--- | :-------- |
+| All  | Logo links back to homepage | Yes | 
+| All  | Navigation links to relevant page | Yes |
+| All  | Social media icons open in new tab| Yes |
+| All  | External links open in correct pages | Yes |
+| Homepage | Images and texts are responsive | Yes |
+| Workshop | Button directs to relevant page | Yes |
+| Gallery  | Images are responsive           | Yes |
+| Sign-up  | Required elements are active on the form | Yes |
+| Sign-up  | Submit button directs to thank you page | Yes |
+| Sign-up  | Map is responsive and directs to larger map | Yes |
+| Thank-you | Button links back to homepage  | Yes |           
+
+<br>
+
+### Performance 
+  
+The website performance was tested using [Lighthouse](https://developers.google.com/web)
+
+For Desktops:
+
+<details>
+<summary>Startpage</summary>
+
+![Startpage lighthouse screeshot]()
+</details>
+
+<details>
+<summary>Gamespace</summary>
+
+![Gamespace lighthouse screeshot]()
+</details>
+
+<details>
+<summary>Score-area</summary>
+
+![Score-area lighthouse screeshot]()
+</details>
+
+
+<br>
+
+For Mobile Devices
+
+### Validation
+
+### HTML<details>
+<summary>Startpage</summary>
+
+![Startpage lighthouse screeshot]()
+</details>
+
+<details>
+<summary>Gamespace</summary>
+
+![Gamespace lighthouse screeshot]()
+</details>
+
+<details>
+<summary>Score-area</summary>
+
+![Score-area lighthouse screeshot]()
+</details>
+
+
+ [W3C Markup Validator](https://validator.w3.org/nu/) - validation service used. 
+
+<details>
+<summary>Startpage</summary>
+
+![Homepage W3C testing screeshot]()
+</details>
+
+<details>
+<summary>Game-space</summary>
+
+![Workshops W3C testing screeshot]()
+</details>
+
+<br>
+
+### CSS
+
+ [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_address)  - validation service used. 
+
+ <details>
+<summary>Stylesheet</summary>
+
+![Screenshot of W3C Jigsaw testing for Let's get quizycall CSS Stylesheet]()
+</details>
+
+### Browser Compatibility
+
+Website was tested manually on these browsers: Google Chrome, Edge, Firefox, Safari. The results were satisfactory.
+
+### Bugs
+
+
+<br>
+
+## Version Control
+
+Version control has been maintained using Git. The code written for this website has been updated via regular commits to Github. These serve as a record of development and changes to the varying pages of html and css.
+
+View commit history [here]()
+
+<br>
+
+## Deployment
+
+Website was deployed on Github:
+
+1. Log in to GitHub and locate the [GitHub Repository 
+foodies-corner]()
+2. Go to "Settings" Button on the menu.
+3. Scroll down the Settings page until you locate the "Pages" in "Code and automation" section.
+4. Under "Source", click the dropdown called "Select branch:" and select "Main", click the dropdown called "Select folder" and select "/root".
+5. The page will automatically refresh and you receive message "Your site is published at". 
+
+![Deployed Site]()
+
+<br>
+
+## Credits
+
+### Code
+
+- Code Institute README.md template has been used to create this document
+- [YouTube]() 
+- [W3schools]() 
+- [FreeCodeCamp]()  
+- [CSS Tricks]()
+
+### Media
+
+ Images were sourced from [Pexels.com](https://pexels.com/):
+ - [Photo by hasan kurt from Pexels:]()
+
+ <br>
+
+ ## Acknowledgements 
+
+ - My Mentor Mitko Bachvarov for the helpul guidance, resources and feedback offered thoughout my project
+ - Code Institute Slack community for the resourceful information and resources
+ - Code Institute Tutor Support for being very generous with assitance and guidance in some areas in my project
+ 
