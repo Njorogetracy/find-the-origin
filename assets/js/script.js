@@ -1,21 +1,17 @@
-//Getting elements from the Dom
+function setUpEvents() {
 
 let introPage = document.getElementById("intro");
-let myModal = document.querySelector("#button-rule");
-let ruleBtn = document.getElementById("instructions");
-let closeModal = document.querySelector("#close-rules");
-let rulesText = document.getElementsByClassName("modal-header");
-let startButton = document.querySelector("#button-start");
-let quizLoad = document.querySelector('.question-container');
-let quizQuestion = document.getElementById('questions');
+let myModal = document.getElementById("button-rule")
+let ruleBtn = document.getElementById("instructions")
+let closeModal = document.getElementById("close-rules")
+//let rulesText = document.getElementsByClassName("modal-header")
+let startButton = document.getElementById("button-start")
+let quizLoad = document.getElementsByClassName('question-container');
 let answerButton1 = document.getElementById("answer1");
 let answerButton2 = document.getElementById("answer2");
 let answerButton3 = document.getElementById("answer3");
 let answerButton4 = document.getElementById("answer4");
 let scoreElement = document.getElementsByClassName("scoreArea");
-
-
-// open Modal with instructions and close modal
 
 myModal.addEventListener("click", function() {
   console.log("you clicked a button")
@@ -70,7 +66,8 @@ function showQuestion(currentQuizQuestion) {
   answerButton4.innerText = currentQuizQuestion.answer4
 }
 
+}
 
-
-
-  
+window.onload = function() {
+  setUpEvents()
+}
