@@ -1,4 +1,4 @@
-// Quiz questions
+// Quiz 
 
 let question = [
 
