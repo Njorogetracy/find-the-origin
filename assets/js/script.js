@@ -4,12 +4,11 @@
   let myModal = document.getElementById("button-rule")
   let ruleBtn = document.getElementById("instructions")
   let closeModal = document.getElementById("close-rules")
-  //let rulesText = document.getElementsByClassName("modal-header")
   let quizLoad = document.getElementsByClassName('question');
-  let answerButton1 = document.getElementById("answer1");
-  let answerButton2 = document.getElementById("answer2");
-  let answerButton3 = document.getElementById("answer3");
-  let answerButton4 = document.getElementById("answer4");
+  //let answerButton1 = document.getElementById("answer1");
+  //let answerButton2 = document.getElementById("answer2");
+  //let answerButton3 = document.getElementById("answer3");
+  //let answerButton4 = document.getElementById("answer4");
   let scoreElement = document.getElementsByClassName("scoreArea");
 
   myModal.addEventListener("click", function () {
@@ -50,6 +49,7 @@ window.onload = (event) => {
   startButton.addEventListener("click", startQuiz)
 }
 
+// start quiz
 let e = 0;
 function startQuiz(event) {
   let gameStart = document.getElementById("game")
@@ -74,15 +74,17 @@ function startQuiz(event) {
         `
           for (let i=0; i<4; i++) {
            let answerEd = question[e].answer[i].text;
-           gameStart.innerHTML+=`<button class="btn btn-lg text-light btn-primary"id="answer1">${answerEd}</button>
+           gameStart.innerHTML+=`
+           <button class="btn btn-lg text-light btn-primary"id="answer1">${answerEd}</button>
             <br>`
         }
            gameStart.innerHTML+= `
         </div>
     </div>
   </div>`
-    let answers = document.getElementsByClassName('btn');
-   //listener for answer
+
+  let answers = document.getElementsByClassName('btn');
+ //listener for answer button 
    for (let j=0; j<4; j++) {
       answers[j].addEventListener('click', answerSelect);
        e++;
@@ -91,6 +93,7 @@ function startQuiz(event) {
 
 function answerSelect(event) {
    setTimeout(startQuiz, 3000);
+
 }
 
 // shuffle questions
