@@ -71,17 +71,17 @@ function startQuiz(event) {
         </h2>
         <br>
         <div class="btn-group-vertical answer">
-        `
-          for (let i=0; i<4; i++) {
-           let answerEd = question[e].answer[i].text;
-           gameStart.innerHTML+=`
-           <button class="btn btn-lg text-light btn-primary"id="answer1">${answerEd}</button>
-            <br>`
-        }
-           gameStart.innerHTML+= `
         </div>
     </div>
   </div>`
+
+  for (let i=0; i<4; i++) {
+    let answerEd = question[e].answer[i].text;
+    let answerButton = document.querySelector('.answer');
+    answerButton.innerHTML+=`
+    <button class="btn btn-lg text-light btn-primary"id="answer1">${answerEd}</button>
+     <br>`
+ }
 
   let answers = document.getElementsByClassName('btn');
  //listener for answer button 
@@ -93,15 +93,16 @@ function startQuiz(event) {
 
 function answerSelect(event) {
    setTimeout(startQuiz, 3000);
-
 }
 
 // shuffle questions
 
 let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
 let randomNumber = [];
-  for (let i = 0; i<9; i++) {
+  for (let i = 0; i<8; i++) {
     let randomIndex = Math.floor(Math.random()* numbers.length);
     randomNumber.push(numbers[randomIndex]);
     numbers.splice(randomIndex, 1);
   }
+
+
