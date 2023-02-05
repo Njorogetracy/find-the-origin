@@ -3,6 +3,10 @@
 
 /*Global styles*/
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Courrier Prime"sans-serif;
   color: black;
@@ -16,7 +20,7 @@ body {
 }
 
 .backgroud-img {
-  background-image: url("assets/images/pexels-nataliya-vaitkevich-7236026.jpg");
+  background-image: url("assets/images/background-photo.jpeg");
   object-fit: cover;
   box-sizing: border-box;
 }
@@ -39,14 +43,14 @@ h1 {
   border-radius: 10px;
   align-items: center;
   box-shadow: 5px 5px 5px #00E7FF;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 #intro {
   display: inline-block;
   font-family: 'Courier Prime', monospace;
   font-size: 30px;
-  padding: 2%;
+  padding: 1rem;
   color: white;
 
 }
@@ -59,7 +63,7 @@ h1 {
 
 /*modal pop up styles*/
 
-.modal {
+/* .modal {
   width: 60%;
   margin: auto;
   background-color: RGBA(16, 0, 0, .8);
@@ -69,7 +73,7 @@ h1 {
   align-items: center;
   box-shadow: 0 0 10px 10px #00E7FF;
   padding: 1rem;
-}
+} */
 
 #instructions {
   display: none;
@@ -97,6 +101,7 @@ h1 {
   font-family: 'Courier Prime', monospace;
 }
 
+
 /* Quiz page styles */
 
 .score-area {
@@ -118,4 +123,22 @@ h1 {
 
 .question {
   text-transform: none;
+}
+
+/* media queries */
+
+/* for large screens up to 1200px */
+
+@media screen and (max-width: 1275px) {
+  .game-space {
+    box-sizing: border-box;
+    width: 60%;
+    height: 80vh;
+  }
+
+  #instructions {
+    font-size: 30px;
+  }
+
+ 
 }
