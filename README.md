@@ -5,7 +5,7 @@ let's get quizycall is an game targeted towards people who love to satisfy their
 
 ![Resposive image of homepage on different devices with different screen sizes]()
 
-[Visit the Let's get quizycall here](https://njorogetracy.github.io/foodies-corner/)
+[Visit the Let's get quizycall here]()
 
 <br>
 
@@ -40,26 +40,29 @@ let's get quizycall is an game targeted towards people who love to satisfy their
 
 ## Project Goals
 
-Let's get quizycall is a quiz website created in partial fulfilment with the second milestone project for Code Institute's Full Stack Software Development course. It was developed out of curiosity to test if people are aware of the history beyond the space they occupy. It tests how much people know about different parts of the world. 
+Let's get quizycall is a quiz website created in partial fulfilment with the second milestone project for Code Institute's Full Stack Software Development course. It was developed out of curiosity to test if people are aware of the history and geography beyond the space they occupy. It tests how much knowledge people have about different parts of the world. 
 
 ### Site Owner Goals 
-- Test users knowledge on world geography
+- Test users knowledge on world geography and history
 - Provide questions and answers for the users
 - Show rules of the game
 - Show users results once quiz is done
 - Display score as users play
+- Display the correct and wrong answers when user plays game
 
 ### User Goals
-- 
-- 
-- 
+- Easily navigate through the game
+- Understand the rules of the game
+- Get questions upon starting the game
+- See correct and wrong answers while playing the game
+- See score while playing the game and upon completion of the game
 
 ## User Experience
 
 ### Target Audience 
 - People who are curious to satisfy their knowledge
 - People seeking to engage in a new activity
-- People seeking to entertain themselves 
+- People seeking to entertain and educate themselves 
 
 ### User Stories 
 
@@ -79,6 +82,7 @@ As a returning-user I want to:
 
 1. Easily navigate through the website
 2. Easily share the website  with people
+
 
 ## Design 
 
@@ -109,21 +113,25 @@ View wireframes [PDF file here]()
 
 ## Features 
 
-This website consists of two pages. A homepage and the quizpage.
+This website consists of a homepage, rules page, quizpage and endgame page.
 
 ### Background Image
 
 - Background image for the website
 
-![Background image]()
+![Background image](assets/css/images/background-photo.jpeg)
 
 ### Game container
 
-![Game space]()
+![Game space](docs/readme-images/home-page.png)
+
+### Rules
+
+![Rules](docs/readme-images/rules-page.png)
 
 ### Quiz area
 
-![Quiz]()
+![Quiz](docs/readme-images/question-container.png)
 
 ### Score Area
 
@@ -140,7 +148,7 @@ This website has been written using HTML, CSS, BOOTSTRAP & JAVASCRIPT
 ### Frameworks, Libraries and Programs Used
 - Github: Storing and hosting my code/repository
 - Gitpod: Code editor for writing my code and storing other images/files
-- Font Awesome: For icons used in the site
+- Bootstrap: creating the modal and the buttons
 - Colorhunt: For choosing the palette to be used in the website
 - Google Fonts: To import the fonts used throughout the site
 - Google DevTools: Used throughout the site's creation to test responsiveness and adjust layout
@@ -152,7 +160,6 @@ This website has been written using HTML, CSS, BOOTSTRAP & JAVASCRIPT
 - [W3schools](https://www.w3schools.com/) For coding questions and reference
 - [Freecodecamp](https://www.freecodecamp.org/) For coding questions and reference
 - [Lighthouse](https://developers.google.com/web) To test performance of website
-- [Pair fonts](https://pairfonts.com/) To visualize font pairing
 
 <br>
 
@@ -172,16 +179,11 @@ Testing was performed across a range of devices, including:
 | Page | Test | Completed |
 | :--- | :--- | :-------- |
 | All  | Logo links back to homepage | Yes | 
-| All  | Navigation links to relevant page | Yes |
-| All  | Social media icons open in new tab| Yes |
-| All  | External links open in correct pages | Yes |
+| All  | Buttons direct to relevant pages | Yes |
 | Homepage | Images and texts are responsive | Yes |
-| Workshop | Button directs to relevant page | Yes |
-| Gallery  | Images are responsive           | Yes |
-| Sign-up  | Required elements are active on the form | Yes |
-| Sign-up  | Submit button directs to thank you page | Yes |
-| Sign-up  | Map is responsive and directs to larger map | Yes |
-| Thank-you | Button links back to homepage  | Yes |           
+| Score | Increements on playing games | Yes |
+| Answers  | Buttons change color upon answering question | Yes |
+          
 
 <br>
 
@@ -195,6 +197,12 @@ For Desktops:
 <summary>Startpage</summary>
 
 ![Startpage lighthouse screeshot]()
+</details>
+
+<details>
+<summary>Rulespage</summary>
+
+![Rulespage lighthouse screeshot]()
 </details>
 
 <details>
