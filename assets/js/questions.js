@@ -1,7 +1,6 @@
 // Quiz 
 
 let question = [
-
     {
         question: 'What country has the longest total coastline (including mainland and offshore islands)?',
         answer: [
@@ -186,7 +185,7 @@ let question = [
     },
   
     {
-        queston: 'Which country is home to the International Criminal Court?',
+        question: 'Which country is home to the International Criminal Court?',
         answer: [
             {text: 'Netherlands', correct: true},
             {text: 'Germany'},
@@ -196,7 +195,7 @@ let question = [
     },
   
     {
-        queston: 'What country is Mesopotamia, one of the first centers of civilization, today?',
+        question: 'What country is Mesopotamia, one of the first centers of civilization, today?',
         answer: [
             {text: 'Iran'},
             {text: 'Syria'},

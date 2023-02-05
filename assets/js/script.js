@@ -79,8 +79,9 @@ function startQuiz(event) {
     let answerEd = question[e].answer[i].text;
     let answerButton = document.querySelector('.answer');
     answerButton.innerHTML+=`
-    <button class="btn btn-lg text-light btn-primary"id="answer1">${answerEd}</button>
+    <button class="btn btn-lg text-light btn-primary"id="answer">${answerEd}</button>
      <br>`
+     
  }
 
   let answers = document.getElementsByClassName('btn');
@@ -89,17 +90,29 @@ function startQuiz(event) {
       answers[j].addEventListener('click', answerSelect);
        e++;
    }
-}
+   console.log(answers)
+}  
 
 function answerSelect(event) {
-   setTimeout(startQuiz, 3000);
+  let correctAnswer = event.target.correct;
+  if (correctAnswer) {
+    console.log("correct")
+    event.target.style.backgroundColor = "green";
+ } else {
+  console.log("wrong")
+   event.target.style.backgroundColor = "red"
+   }
+   setTimeout(startQuiz, 1000);
+   console.log(correctAnswer)
 }
+
+
 
 // shuffle questions
 
 let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
 let randomNumber = [];
-  for (let i = 0; i<8; i++) {
+  for (let i = 0; i<=9; i++) {
     let randomIndex = Math.floor(Math.random()* numbers.length);
     randomNumber.push(numbers[randomIndex]);
     numbers.splice(randomIndex, 1);

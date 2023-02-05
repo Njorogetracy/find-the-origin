@@ -67,7 +67,7 @@ h1 {
   box-sizing: border-box;
   border-radius: 10px;
   align-items: center;
-  box-shadow: 5px 5px 5px #00E7FF;
+  box-shadow: 0 0 10px 10px #00E7FF;
   padding: 1rem;
 }
 
