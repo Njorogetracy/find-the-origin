@@ -291,7 +291,7 @@ View commit history [here]()
 Website was deployed on Github:
 
 1. Log in to GitHub and locate the [GitHub Repository 
-foodies-corner]()
+find-the-origin]()
 2. Go to "Settings" Button on the menu.
 3. Scroll down the Settings page until you locate the "Pages" in "Code and automation" section.
 4. Under "Source", click the dropdown called "Select branch:" and select "Main", click the dropdown called "Select folder" and select "/root".
@@ -314,7 +314,7 @@ foodies-corner]()
 ### Media
 
  Images were sourced from [Pexels.com](https://pexels.com/):
- - [Photo by hasan kurt from Pexels:]()
+ - [Photo by ... from Pexels:]()
 
  <br>
 
