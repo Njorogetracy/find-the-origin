@@ -16,11 +16,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
+  background-size: cover; 
 }
 
 .backgroud-img {
-  background-image: url("assets/images/background-photo.jpeg");
   object-fit: cover;
   box-sizing: border-box;
 }

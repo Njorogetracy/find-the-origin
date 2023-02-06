@@ -75,7 +75,7 @@ function startQuiz(event) {
             Score
         </strong>
     </p>
-    <h1>${score}</h1>
+    <h1>${score} / 10. </h1>
   </div>
   <div class="game-space question-container container-fluid col-6 mt-4 text-center">
     <br>
@@ -100,7 +100,8 @@ function startQuiz(event) {
     answerButton.innerHTML+=`
     <button class="btn btn-lg text-light btn-primary">${answerEd}</button>
      <br>`;
-     console.log(answerEd) }
+     console.log(answerEd) 
+  }
    };
    let answers = document.querySelectorAll('.btn');
      for (let j=0; j<4; j++) {
