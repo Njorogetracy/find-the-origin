@@ -138,7 +138,31 @@ h1 {
 
   #instructions {
     font-size: 30px;
-  }
+  } 
 
+  @media screen and (max-width: 950px) and (max-width: 700px) {
+    .game-space {
+      box-sizing: border-box;
+      width: 60%;
+      height: 85vh;
+      font-size: 20px;
+    }
+  
+    #instructions {
+      font-size: 20px;
+    } 
+  }
  
+  @media screen and (max-width: 750px) {
+    .game-space {
+      box-sizing: border-box;
+      width: 60%;
+      height: 100vh;
+      font-size: 10px;
+    }
+  
+    #instructions {
+      font-size: 10px;
+    } 
+  }
 }
