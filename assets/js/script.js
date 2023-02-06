@@ -24,13 +24,13 @@
 
   closeModal.addEventListener("click", function () {
     closeModal.addEventListener = 'block';
-    instructions.style.display = 'block';
+    ruleBtn.style.display = 'block';
     introPage.style.display = 'block';
     closeRules();
   });
 
   function closeRules() {
-    instructions.style.display = 'none';
+    ruleBtn.style.display = 'none';
     introPage.style.display = 'block';
     startButton.style.display = 'block';
     myModal.style.display = 'block';
