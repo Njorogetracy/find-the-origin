@@ -34,7 +34,7 @@ let question = [
     },
   
     {
-        question: 'Caberra is the capital city of what country?',
+        question: 'Canberra is the capital city of what country?',
         answer: [
             {text: 'New Zealand'},
             {text: 'Australia', correct: true},
@@ -55,7 +55,7 @@ let question = [
     },
   
     {
-        question: 'Which country is the source of the White Nile',
+        question: 'Which country is the source of the White Nile?',
         answer: [
             {text: 'Ethiopia'},
             {text: 'Uganda', correct: true},
@@ -75,7 +75,7 @@ let question = [
     },
   
     {
-        question: 'Which of the following countries does not qualify to be an enclave',
+        question: 'Which of the following countries does not qualify to be an enclave?',
         answer: [
             {text: 'Vatican City'},
             {text: 'Lesotho'},
@@ -87,7 +87,7 @@ let question = [
     {
         question: 'Which of the following European countries is not landlocked?',
         answer: [
-            {text: 'Maldova'},
+            {text: 'Moldova'},
             {text: 'Belarus'},
             {text: 'Montenegro', correct: true},
             {text: 'North Macedonia'},
@@ -95,7 +95,7 @@ let question = [
     },
   
     {
-        question: 'Which country is home to the highest mountain in Africa',
+        question: 'Which country is home to the highest mountain in Africa?',
         answer: [
             {text: 'Kenya'},
             {text: 'Algeria'},
@@ -106,7 +106,7 @@ let question = [
   
     {
         question: 'Which country is the birthplace of ramen noodles?',
-        answers: [
+        answer: [
             {text: 'China', correct: true},
             {text: 'Japan'},
             {text: 'Vietnam'},
@@ -145,7 +145,7 @@ let question = [
     },
   
     {
-        question: 'Which is not a Scandinavian country?',
+        question: 'Which of the following is not a Scandinavian country?',
         answer: [
             {text: 'Iceland'},
             {text: 'Denmark'},
@@ -165,7 +165,7 @@ let question = [
     },
   
     {
-        question: 'In which country is Arabica coffee not grown?',
+        question: 'In which country is Arabica coffee NOT grown?',
         answer: [
             {text: 'Brazil'},
             {text: 'Kenya'},
@@ -175,7 +175,7 @@ let question = [
     },
   
     {
-        question: 'Which African country is closest to the Strait of Gilbraltar?',
+        question: 'Which African country is closest to the Strait of Gibraltar?',
         answer: [
             {text: 'Tunisia'},
             {text: 'Morocco', correct: true},
@@ -195,7 +195,7 @@ let question = [
     },
   
     {
-        question: 'What country is Mesopotamia, one of the first centers of civilization, today?',
+        question: 'Which modern-day country is home to Mesopotamia, one of the first centres of civilization?',
         answer: [
             {text: 'Iran'},
             {text: 'Syria'},
