@@ -65,7 +65,7 @@ function startQuiz(event) {
   let gameStart = document.getElementById("game");
   if (e === 10) {
     gameStart.innerHTML = `
-    <div class="game-space question-container container-fluid col-6 mt-4 text-center">
+    <div class="game-space question-container container-fluid mt-4 text-center">
     <h1 class="text-light"> Game Over </h1>
     <h2> Your score is ${score}</h2>
     </div>`
@@ -80,7 +80,7 @@ function startQuiz(event) {
     </p>
     <h1>: ${score}/10. </h1>
   </div>
-  <div class="game-space question-container container-fluid col-6 mt-4 text-center">
+  <div class="game-space question-container container-fluid mt-4 text-center">
     <br>
     <div class="quiz-header">
         <h2 class="text-light question" id="questions">
@@ -96,12 +96,12 @@ function startQuiz(event) {
     let answerButton = document.querySelector('.answer');
     if (question[f].answer[i].correct === "true") {
       answerButton.innerHTML+=`
-    <button class="btn btn-lg text-light btn-primary correct">${answerEd}</button>
+    <button class="btn text-light btn-primary correct">${answerEd}</button>
      <br>`;
      console.log(answerEd)
     } else {
     answerButton.innerHTML+=`
-    <button class="btn btn-lg text-light btn-primary">${answerEd}</button>
+    <button class="btn text-light btn-primary">${answerEd}</button>
      <br>`;
      console.log(answerEd) 
   }
