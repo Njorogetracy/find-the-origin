@@ -88,7 +88,7 @@ h1 {
   font-family: 'Courier New', Courier, monospace;
   text-shadow: 0px 2px 2px #00E7FF;
   background-color: RGBA(16, 0, 0, .8);
-  width: 30%;
+  max-width: 50%;
   margin: auto;
   margin-top: 2rem;
   font-size: 40px;
@@ -96,7 +96,8 @@ h1 {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
-  gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .question-container {
@@ -113,6 +114,9 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-content: center;
 }
 
 .question {
@@ -123,8 +127,10 @@ h1 {
 .btn-grp-vertical {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
   font-size: 20px;
-  width: 50%;
+  max-width: 80%;
   justify-content: center;
   margin: 0 auto;
 }
@@ -158,8 +164,6 @@ h1 {
     #instructions {
       font-size: 10px;
     } 
-
-    
   }
  
   @media screen and (max-width: 750px) {
@@ -192,7 +196,6 @@ h1 {
     .question {
       font-size: 20px;
     }
-
     
   }
 
@@ -205,5 +208,15 @@ h1 {
     #intro {
       font-size: 20px;   
       }
+
+   .btn-grp-vertical {
+    font-size: 10px;
+   }
+
+   .score-area {
+    font-size: 25px;
+    justify-content: space-evenly;
+    align-items: center;
+   }
   }
 }

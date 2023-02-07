@@ -6,6 +6,7 @@
   let closeModal = document.getElementById("close-rules");
   let quizLoad = document.getElementsByClassName('question');
   let scoreElement = document.getElementsByClassName("scoreArea");
+  let gameArea = document.querySelector('game-space')
 
   myModal.addEventListener("click", function () {
     console.log("you clicked a button");
@@ -36,6 +37,7 @@
     myModal.style.display = 'block';
   }
 
+// load window on game start  
 let startButton = document.getElementById("button-start");
 
 window.onload = (event) => {
@@ -64,8 +66,7 @@ function startQuiz(event) {
   if (e === 10) {
     gameStart.innerHTML = `
     <div class="game-space question-container container-fluid col-6 mt-4 text-center">
-    <h1>${intro}</h1>`
-    `<h1 class="text-light"> Game Over </h1>
+    <h1 class="text-light"> Game Over </h1>
     <h2> Your score is ${score}</h2>
     </div>`
   } 
@@ -77,7 +78,7 @@ function startQuiz(event) {
             Score
         </strong>
     </p>
-    <h1>${score}/10. </h1>
+    <h1>: ${score}/10. </h1>
   </div>
   <div class="game-space question-container container-fluid col-6 mt-4 text-center">
     <br>
@@ -126,7 +127,7 @@ function answerSelect(event) {
 }
 
 function endGame() {
-  
+  gameArea.style.display = "show"
 }
 
 
