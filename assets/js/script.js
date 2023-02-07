@@ -57,6 +57,8 @@ return randomNumber
 let shuffled = shuffleNum()
 console.log(shuffled)
 
+let countdown = 10;
+
 // start quiz
 let e = 0;
 let score = 0;
@@ -70,6 +72,16 @@ function startQuiz(event) {
     <h2> Your score is ${score}</h2>
     </div>`
   } 
+    // game timer 
+    const countdownInterval = setInterval(() => {
+      console.log(countdown);
+      countdown--;
+      if (countdown === 0) {
+        clearInterval(countdownInterval);
+        console.log("Countdown is over!");
+        endGame(score)
+      }
+    }, 1000);
   startButton.classList.add('hide');
   gameStart.innerHTML = `
     <div class="text-center text-light score-area">
@@ -122,12 +134,19 @@ function answerSelect(event) {
   } else {
     console.log("Wrong");
     selected.style.backgroundColor = "red";
+    let correctAns = document.getElementsByClassName("correct")[0];
+    console.log(correctAns)
+    correctAns.style.backgroundColor = "green"
   }
   setTimeout(startQuiz, 1000);
 }
 
-function endGame() {
-  gameArea.style.display = "show"
+function endGame(score) {
+  let gameStart = document.getElementById("game");
+  gameStart.innerHTML = `<div class="game-space question-container container-fluid mt-4 text-center">
+  <h1>THE END</h1>
+  <h2>${score}</h2>
+  </div>`
 }
 
 
