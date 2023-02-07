@@ -30,6 +30,7 @@ h1 {
   text-align: center;
   color: white;
   font-weight: 400;
+  cursor: pointer;
 }
 
 /*game box edits*/
