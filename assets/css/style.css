@@ -36,49 +36,29 @@ h1 {
 /*game box edits*/
 .game-space {
   width: 60%;
-  margin: auto;
-  background-color: RGBA(16, 0, 0, .8);
   height: 75vh;
-  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: RGBA(16, 0, 0, .8);
   border-radius: 10px;
   align-items: center;
   box-shadow: 5px 5px 5px #00E7FF;
-  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #intro {
   display: inline-block;
   font-family: 'Courier Prime', monospace;
-  font-size: 30px;
-  padding: 1rem;
+  font-size: 25px;
   color: white;
 
 }
 
-.btn-rule-box {
-  margin: auto;
-  font-family: 'Courier Prime', monospace;
-}
-
-
-/*modal pop up styles*/
-
-/* .modal {
-  width: 60%;
-  margin: auto;
-  background-color: RGBA(16, 0, 0, .8);
-  height: 75vh;
-  box-sizing: border-box;
-  border-radius: 10px;
-  align-items: center;
-  box-shadow: 0 0 10px 10px #00E7FF;
-  padding: 1rem;
-} */
-
 #instructions {
   display: none;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 30px;
+  font-size: 25px;
   color: white;
   position: relative;
   z-index: 4;
@@ -106,63 +86,124 @@ h1 {
 
 .score-area {
   font-family: 'Courier New', Courier, monospace;
-  background-color: #00448c;
-  width: 50%;
+  text-shadow: 0px 2px 2px #00E7FF;
+  background-color: RGBA(16, 0, 0, .8);
+  width: 30%;
   margin: auto;
   margin-top: 2rem;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 400;
   display: flex;
+  flex-direction: row;
+  flex-grow: 1;
   gap: 1rem;
 }
 
 .question-container {
   font-family: 'Courier New', Courier, monospace;
-  margin: auto;
+  width: 60%;
+  height: 75vh;
+  margin: 0 auto;
+  background-color: RGBA(16, 0, 0, .8);
+  box-sizing: border-box;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 5px 5px 5px #00E7FF;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .question {
   text-transform: none;
+  font-weight: 300;
+}
+
+.btn-grp-vertical {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  width: 50%;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 /* media queries */
 
 /* for large screens up to 1200px */
 
-@media screen and (max-width: 1275px) {
+@media screen and (max-width: 1200px) {
   .game-space {
     box-sizing: border-box;
     width: 60%;
-    height: 80vh;
+
   }
 
   #instructions {
-    font-size: 30px;
+    font-size: 20px;
   } 
 
   @media screen and (max-width: 950px) and (max-width: 700px) {
     .game-space {
       box-sizing: border-box;
       width: 60%;
-      height: 85vh;
-      font-size: 20px;
+      font-size: 10px;
+    }
+
+    #intro {
+    font-size: 10px;   
     }
   
     #instructions {
-      font-size: 20px;
+      font-size: 10px;
     } 
+
+    
   }
  
   @media screen and (max-width: 750px) {
     .game-space {
       box-sizing: border-box;
-      width: 60%;
-      height: 100vh;
+      width: 80%;
       font-size: 10px;
     }
+
+    #intro {
+      font-size: 20px;   
+      }
   
     #instructions {
       font-size: 10px;
     } 
+    #modal-header {
+      color: white;
+    }
+    
+    #modal-content {
+      font-size: 20px;
+    }
+
+    .question-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .question {
+      font-size: 20px;
+    }
+
+    
+  }
+
+  @media screen and (max-width: 500px) {
+    .game-space {
+      width: 70%;
+      font-size: 5px;
+    }
+    
+    #intro {
+      font-size: 20px;   
+      }
   }
 }

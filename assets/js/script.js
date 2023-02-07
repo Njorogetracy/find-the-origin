@@ -63,9 +63,11 @@ function startQuiz(event) {
   let gameStart = document.getElementById("game");
   if (e === 10) {
     gameStart.innerHTML = `
-    <h1> Game Over </h1>
+    <div class="game-space question-container container-fluid col-6 mt-4 text-center">
+    <h1>${intro}</h1>`
+    `<h1 class="text-light"> Game Over </h1>
     <h2> Your score is ${score}</h2>
-    `
+    </div>`
   } 
   startButton.classList.add('hide');
   gameStart.innerHTML = `
@@ -75,7 +77,7 @@ function startQuiz(event) {
             Score
         </strong>
     </p>
-    <h1>${score} / 10. </h1>
+    <h1>${score}/10. </h1>
   </div>
   <div class="game-space question-container container-fluid col-6 mt-4 text-center">
     <br>
@@ -84,7 +86,7 @@ function startQuiz(event) {
             ${question[f].question}
         </h2>
         <br>
-        <div class="btn-group-vertical answer">
+        <div class="btn-grp-vertical answer">
         </div>
     </div>
   </div>`;
@@ -121,6 +123,10 @@ function answerSelect(event) {
     selected.style.backgroundColor = "red";
   }
   setTimeout(startQuiz, 1000);
+}
+
+function endGame() {
+  
 }
 
 
