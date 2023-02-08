@@ -145,7 +145,7 @@ function endGame(score) {
   let gameStart = document.getElementById("game");
   gameStart.innerHTML = `<div class="game-space question-container container-fluid mt-4 text-center">
   <h1>THE END</h1>
-  <h2>${score}</h2>
+  <h2> You're score is ${score}</h2>
   </div>`
 }
 
