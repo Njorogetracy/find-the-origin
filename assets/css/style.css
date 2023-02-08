@@ -244,4 +244,43 @@ h1 {
       font-size: 30px;
     }
   }
+
+  @media screen and (max-width: 320px) {
+    .game-space {
+      font-size: 5px;
+    }
+
+    .heading {
+      font-size: 20px;
+    }
+
+    #intro {
+      font-size: 15px;
+    }
+
+    .btn {
+      font-size: 0.7rem !important;
+    }
+
+    .question {
+      font-size: 20px;
+    }
+
+
+    .btn-grp-vertical {
+      font-size: 10px;
+    }
+
+    .score-area {
+      max-width: 70% !important;
+      font-size: 1rem;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .score-area p {
+      font-size: 20px;
+    }
+  }
 }
