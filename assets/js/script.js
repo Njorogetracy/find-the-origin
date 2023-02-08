@@ -57,25 +57,26 @@ return randomNumber
 let shuffled = shuffleNum()
 console.log(shuffled)
 
-let countdown = 10;
-
 // start quiz
 let e = 0;
 let score = 0;
+let countdown;
 function startQuiz(event) {
   let f = shuffled[e]
   let gameStart = document.getElementById("game");
-  if (e === 10);
     // game timer 
-    const countdownInterval = setInterval(() => {
-      console.log(countdown);
-      countdown--;
-      if (countdown === 0) {
-        clearInterval(countdownInterval);
-        console.log("Countdown is over!");
-        endGame(score)
-      }
-    }, 1000);
+    if (e === 0 || countdown === 0) {
+      countdown = 10;
+      const countdownInterval = setInterval(() => {
+        console.log(countdown);
+        countdown--;
+        if (countdown === 0) {
+          clearInterval(countdownInterval);
+          console.log("Countdown is over!");
+          endGame(score)
+        }
+      }, 1000);
+    } 
   startButton.classList.add('hide');
   gameStart.innerHTML = `
     <div class="text-center text-light score-area">
@@ -85,7 +86,7 @@ function startQuiz(event) {
         </strong>
     </p>
     <h1>: ${score}/10. </h1>
-    <h1>: ${countdown} </h1>
+    <h1>Timer: ${countdown} </h1>
   </div>
   <div class="game-space question-container container-fluid mt-4 text-center">
     <br>
@@ -112,12 +113,12 @@ function startQuiz(event) {
      <br>`;
      console.log(answerEd) 
   }
-   };
+   }; 
+   e++;
    let answers = document.querySelectorAll('.btn');
      for (let j=0; j<4; j++) {
       answers[j].addEventListener("click", answerSelect);
    };
-   e++;
 }
 
 function answerSelect(event) {
@@ -133,7 +134,12 @@ function answerSelect(event) {
     console.log(correctAns)
     correctAns.style.backgroundColor = "green"
   }
-  setTimeout(startQuiz, 1000);
+  if (e != 0 && countdown != 0) {
+    setTimeout(startQuiz, 1000); 
+  } else {
+    endGame(score);
+  };
+  
 }
 
 function endGame(score) {
@@ -141,7 +147,7 @@ function endGame(score) {
   gameStart.innerHTML = `<div class="game-space question-container container-fluid mt-4  text-light text-center">
   <h1>THE END</h1>
   <h2> You're score is ${score}</h2>
-  </div>`
+  </div>`;
 }
 
 
