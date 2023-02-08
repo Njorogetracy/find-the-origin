@@ -65,13 +65,7 @@ let score = 0;
 function startQuiz(event) {
   let f = shuffled[e]
   let gameStart = document.getElementById("game");
-  if (e === 10) {
-    gameStart.innerHTML = `
-    <div class="game-space question-container container-fluid mt-4 text-center">
-    <h1 class="text-light"> Game Over </h1>
-    <h2> Your score is ${score}</h2>
-    </div>`
-  } 
+  if (e === 10);
     // game timer 
     const countdownInterval = setInterval(() => {
       console.log(countdown);
@@ -91,6 +85,7 @@ function startQuiz(event) {
         </strong>
     </p>
     <h1>: ${score}/10. </h1>
+    <h1>: ${countdown} </h1>
   </div>
   <div class="game-space question-container container-fluid mt-4 text-center">
     <br>
@@ -143,7 +138,7 @@ function answerSelect(event) {
 
 function endGame(score) {
   let gameStart = document.getElementById("game");
-  gameStart.innerHTML = `<div class="game-space question-container container-fluid mt-4 text-center">
+  gameStart.innerHTML = `<div class="game-space question-container container-fluid mt-4  text-light text-center">
   <h1>THE END</h1>
   <h2> You're score is ${score}</h2>
   </div>`
