@@ -4,8 +4,6 @@
   let myModal = document.getElementById("button-rule");
   let ruleBtn = document.getElementById("instructions");
   let closeModal = document.getElementById("close-rules");
-  let quizLoad = document.getElementsByClassName('question');
-  let scoreElement = document.getElementsByClassName("scoreArea");
   let gameArea = document.querySelector('game-space')
 
   myModal.addEventListener("click", function () {
@@ -44,6 +42,10 @@ window.onload = (event) => {
   startButton.addEventListener("click", startQuiz);
 };
 
+/**
+ * This functions shuffles the questions in the array
+ * and removes the question displayed after user plays
+ */
 function shuffleNum(){
   let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
   let randomNumber = [];
@@ -51,7 +53,7 @@ function shuffleNum(){
     let randomIndex = Math.floor(Math.random()* numbers.length);
     randomNumber.push(numbers[randomIndex]);
     numbers.splice(randomIndex, 1);
-  }
+  };
 return randomNumber
  }
 let shuffled = shuffleNum()
@@ -61,12 +63,19 @@ console.log(shuffled)
 let e = 0;
 let score = 0;
 let countdown;
+
+/**
+ * This function starts the quiz, 
+ * on clicking the start button.
+ * Displays the score area and the countdown timer for the quiz.
+ * Increements the question. 
+ */
 function startQuiz(event) {
-  let f = shuffled[e]
+  let f = shuffled[e];
   let gameStart = document.getElementById("game");
     // game timer 
     if (e === 0 || countdown === 0) {
-      countdown = 60;
+      countdown = 10;
       const countdownInterval = setInterval(() => {
         console.log(countdown);
         countdown--;
@@ -76,7 +85,7 @@ function startQuiz(event) {
           endGame(score)
         }
       }, 1000);
-    } 
+    };
   startButton.classList.add('hide');
   gameStart.innerHTML = `
     <div class="text-center text-light score-area">
@@ -121,6 +130,10 @@ function startQuiz(event) {
    };
 }
 
+/**
+ * This functions displays the correct answer 
+ * after user selects and answer
+ */
 function answerSelect(event) {
   let selected = event.target;
   if (selected.classList.contains("correct")) {
@@ -131,10 +144,10 @@ function answerSelect(event) {
     console.log("Wrong");
     selected.style.backgroundColor = "red";
     let correctAns = document.getElementsByClassName("correct")[0];
-    console.log(correctAns)
-    correctAns.style.backgroundColor = "green"
+    console.log(correctAns);
+    correctAns.style.backgroundColor = "green";
   }
-  if (e != 0 && countdown != 0) {
+  if (e != 0 || countdown != 0) {
     setTimeout(startQuiz, 1000); 
   } else {
    endGame(score);
@@ -142,13 +155,23 @@ function answerSelect(event) {
   
 }
 
+/**
+ * This functions displays score anfter game ends
+ */
 function endGame(score) {
   let gameStart = document.getElementById("game");
-  gameStart.innerHTML = `<div class="game-space question-container container-fluid mt-4  text-light text-center">
+  var newBtn = document.createElement("Button");
+  newBtn.innerText = "Restart";
+  document.body.append(newBtn);
+  console.log(newBtn)
+  gameStart.innerHTML = `
+  <div class="game-space question-container container-fluid mt-4  text-light text-center">
   <h1>THE END</h1>
   <h2> You're score is ${score}</h2>
-  </div>`;
+  </div>`
+  //restartGame();
 }
+
 
 
 
