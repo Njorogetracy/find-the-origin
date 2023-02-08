@@ -66,7 +66,7 @@ function startQuiz(event) {
   let gameStart = document.getElementById("game");
     // game timer 
     if (e === 0 || countdown === 0) {
-      countdown = 10;
+      countdown = 60;
       const countdownInterval = setInterval(() => {
         console.log(countdown);
         countdown--;
@@ -137,7 +137,7 @@ function answerSelect(event) {
   if (e != 0 && countdown != 0) {
     setTimeout(startQuiz, 1000); 
   } else {
-    endGame(score);
+   endGame(score);
   };
   
 }
