@@ -329,6 +329,9 @@ To clone the original repository:
 4. Type git clone in your terminal, and then paste the URL you copied
 5. Press Enter to create your local clone.
 
+![Deployed Site](https://njorogetracy.github.io/find-the-origin/)
+
+
 <br>
 
 ## Credits
@@ -354,4 +357,5 @@ To clone the original repository:
  - My colleague Mia Rasmussen for the feedback on optimising my site for mobiles after testing the game
  - Code Institute Slack community for the resourceful information and resources
  - Code Institute Tutor Support for being very generous with assitance and guidance in some areas in my project
+ - My family for taking their time to test the quiz
  
