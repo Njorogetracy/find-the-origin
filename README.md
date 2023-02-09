@@ -250,11 +250,17 @@ For Mobile Devices
 
 ### CSS
 
- <details>
+ 
 <summary>Stylesheet</summary>
 
+<details>
 ![Screenshot of W3C Jigsaw testing for Let's get quizycall CSS Stylesheet](docs/readme-images/css-validation.png)
 </details>
+
+### Jshint 
+<summary>Javascript</summary>
+
+![JS validation screenshot]()
 
 <br>
 
@@ -270,7 +276,7 @@ Website was tested manually on these browsers: Google Chrome, Edge, Firefox, Saf
 
 
 #### Unfixed Bugs
-- User can pick more that one question
+- User can pick more that one question, the expected behavior is for the user to pick one answer per question
 <details>
 
 ![question select bug](docs/readme-images/question-select.jpg)
@@ -305,13 +311,23 @@ find-the-origin](https://njorogetracy.github.io/find-the-origin/)
 
 ### Forking the Github Repository
 
-To make a copy of the original repository on a GitHub account, ao as to view and/or make changes without affecting the original repository use the following steps...
+To make a copy of the original repository on a GitHub account, ao as to view and/or make changes without affecting the original repository use the following steps:
 
 1. Log in to GitHub and locate the repository find-the-origin
 2. At the top of the Repository (not the top of the page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ![Deployed Site](https://njorogetracy.github.io/find-the-origin/)
+
+### Cloning the Github Repository
+
+To clone the original repository:
+
+1. Log in to GitHub and locate the repository find-the-origin
+2. Above the list of files(top right of screen), click Code
+3. Copy the URL using HTTPS, under "HTTPS"
+4. Type git clone in your terminal, and then paste the URL you copied
+5. Press Enter to create your local clone.
 
 <br>
 
