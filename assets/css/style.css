@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Courrier Prime"sans-serif;
+  font-family: "Courrier Prime", sans-serif;
   color: black;
   text-align: center;
   background-color: #FFF2F2;
@@ -84,6 +84,9 @@ h1 {
   font-family: 'Courier Prime', monospace;
 }
 
+.btn-restart-box {
+  display: none;
+}
 
 /* Quiz page styles */
 
