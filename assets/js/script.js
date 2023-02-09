@@ -4,8 +4,7 @@
   let myModal = document.getElementById("button-rule");
   let ruleBtn = document.getElementById("instructions");
   let closeModal = document.getElementById("close-rules");
-  let gameArea = document.querySelector('game-space')
-  let restartGame = document.getElementById('button-restart')
+  let restartGame = document.getElementById('button-restart');
 
   myModal.addEventListener("click", function () {
     console.log("you clicked a button");
@@ -55,11 +54,11 @@ function shuffleNum(){
     let randomIndex = Math.floor(Math.random()* numbers.length);
     randomNumber.push(numbers[randomIndex]);
     numbers.splice(randomIndex, 1);
-  };
-return randomNumber
+  }
+return randomNumber;
  }
-let shuffled = shuffleNum()
-console.log(shuffled)
+let shuffled = shuffleNum();
+console.log(shuffled);
 
 // start quiz
 let e = 0;
@@ -85,10 +84,10 @@ function startQuiz(event) {
         if (countdown === 0) {
           clearInterval(countdownInterval);
           console.log("Countdown is over!");
-          endGame(score)
+          endGame(score);
         }
       }, 1000);
-    };
+    }
   startButton.classList.add('hide');
   gameStart.innerHTML = `
     <div class="text-center text-light score-area">
@@ -115,19 +114,19 @@ function startQuiz(event) {
       answerButton.innerHTML+=`
     <button class="btn text-light btn-primary correct">${answerEd}</button>
      <br>`;
-     console.log(answerEd)
+     console.log(answerEd);
     } else {
     answerButton.innerHTML+=`
     <button class="btn text-light btn-primary">${answerEd}</button>
      <br>`;
-     console.log(answerEd) 
+     console.log(answerEd);
   }
-   }; 
+   } 
    e++;
    let answers = document.querySelectorAll('.btn');
      for (let j=0; j<4; j++) {
       answers[j].addEventListener("click", answerSelect);
-   };
+   }
 }
 
 /**
@@ -151,7 +150,7 @@ function answerSelect(event) {
     setTimeout(startQuiz, 1000); 
   } else {
    endGame(score);
-  };
+  }
   
 }
 
@@ -169,7 +168,7 @@ function endGame(score) {
   <h1>THE END</h1>
   <h2> You're score is ${score}</h2>
   <button onclick="location.href='index.html'" type="button" class="btn btn-primary btn-lg" id="restart-game">Restart</button>
-  </div>`
+  </div>`;
   console.log(restartGame);
 
 }
