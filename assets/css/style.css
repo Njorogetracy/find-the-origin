@@ -160,6 +160,13 @@ h1 {
     font-size: 20px;
   }
 
+  .score-area {
+    max-width: 70% !important;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
   @media screen and (max-width: 950px) and (max-width: 700px) {
     .game-space {
       box-sizing: border-box;
@@ -202,6 +209,19 @@ h1 {
       font-size: 20px;
     }
 
+    .score-area {
+      max-width: 60% !important;
+      font-size: 1rem;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .score-area p {
+      font-size: 30px;
+    }
+
     .question-container {
       display: flex;
       flex-direction: row;
@@ -240,7 +260,7 @@ h1 {
       font-size: 1rem;
       justify-content: space-evenly;
       align-items: center;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
 
     .score-area p {
