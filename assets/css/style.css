@@ -222,11 +222,6 @@ h1 {
       font-size: 30px;
     }
 
-    .question-container {
-      display: flex;
-      flex-direction: row;
-    }
-
     .question {
       font-size: 20px;
     }
@@ -236,6 +231,7 @@ h1 {
   @media screen and (max-width: 500px) {
     .game-space {
       font-size: 5px;
+      flex-direction: column;
     }
 
     #intro {
