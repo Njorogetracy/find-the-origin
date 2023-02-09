@@ -1,7 +1,7 @@
 # Let's get quizycall 
 (Developer Hope Tracy Njoroge)
 
-let's get quizycall is an game targeted towards people who love to satisfy their quest for knwoledge. It aims to educate and entertain its users through the questions asked within the quiz.
+let's get quizycall is a game targeted towards people who love to satisfy their quest for knwoledge. It aims to educate and entertain its users through the questions asked within the quiz.
 
 ![Resposive image of homepage on different devices with different screen sizes]()
 
@@ -32,7 +32,7 @@ let's get quizycall is an game targeted towards people who love to satisfy their
     - [Browser Compatibility](#browser-compatibility)
     - [Bugs](#bugs)
 6.  [Version Control](#version-control)
-7.  [Deployment](#deployment)
+7.  [Deployment and Local Development](#deployment-and-local-development)
 8.  [Credits](#credits)
 9.  [Acknowledgements](#acknowledgements)
 
@@ -40,20 +40,22 @@ let's get quizycall is an game targeted towards people who love to satisfy their
 
 ## Project Goals
 
-Let's get quizycall is a quiz website created in partial fulfilment with the second milestone project for Code Institute's Full Stack Software Development course. It was developed out of curiosity to test if people are aware of the history and geography beyond the space they occupy. It tests how much knowledge people have about different parts of the world. 
+Let's get quizycall is a quiz website created in partial fulfilment with the second milestone project for Code Institute's Full Stack Software Development course. It was developed out of curiosity. It tests people's awareness of the history and geography beyond the space they occupy. It tests how much knowledge people have about different parts of the world. 
 
 ### Site Owner Goals 
 - Test users knowledge on world geography and history
 - Provide questions and answers for the users
 - Show rules of the game
 - Show users results once quiz is done
+- Display countdown time for users
 - Display score as users play
 - Display the correct and wrong answers when user plays game
 
 ### User Goals
 - Easily navigate through the game
-- Understand the rules of the game
+- Reand and understand the rules of the game
 - Get questions upon starting the game
+- See how much time they have left to finish the quiz
 - See correct and wrong answers while playing the game
 - See score while playing the game and upon completion of the game
 
@@ -74,7 +76,8 @@ As a first-time visitor I want to:
 2. Start game
 3. See correct answer and wrong answer after answering
 4. See score as I play the game
-5. Easily navigate through the website
+5. See timer as I play the game
+6. Easily navigate through the website
 
 #### Returning User 
 
@@ -96,7 +99,7 @@ This website uses a palette of pastel colours that are subtle yet eye catching t
 
 ### Typography 
 
-[Google Fonts]() was used to source the font styles used throughout the website:
+[Google Fonts](https://fonts.google.com/) was used to source the font styles used throughout the website:
 - Courrier Prime: Used for the logo and all headings
 - Courrier Prime: Used for main body text
 
@@ -119,7 +122,7 @@ This website consists of a homepage, rules page, quizpage and endgame page.
 
 - Background image for the website
 
-![Background image](assets/css/images/background-photo.jpeg)
+![Background image](docs/readme-images/images/background-photo.jpeg)
 
 ### Game container
 
@@ -153,11 +156,12 @@ This website has been written using HTML, CSS, BOOTSTRAP & JAVASCRIPT
 - Google Fonts: To import the fonts used throughout the site
 - Google DevTools: Used throughout the site's creation to test responsiveness and adjust layout
 - Balsamiq: Wireframe software
-- Am I Responsive: To create a visual of the website across different device sizes
-- Tinypng: resize images 
+- Am I Responsive: To create a visual of the website across different device sizes 
 - [Pexels](https://www.pexels.com/) For images used in the website
 - [YouTube](https://www.youtube.com/) For inspiration and coding tutorials
 - [W3schools](https://www.w3schools.com/) For coding questions and reference
+- [Jshint](https://jshint.com/) Javascript validator
+- [CSS Validator](https://jigsaw.w3.org/) css validator
 - [Freecodecamp](https://www.freecodecamp.org/) For coding questions and reference
 - [Lighthouse](https://developers.google.com/web) To test performance of website
 
@@ -178,10 +182,10 @@ Testing was performed across a range of devices, including:
 
 | Page | Test | Completed |
 | :--- | :--- | :-------- |
-| All  | Logo links back to homepage | Yes | 
 | All  | Buttons direct to relevant pages | Yes |
 | Homepage | Images and texts are responsive | Yes |
 | Score | Increements on playing games | Yes |
+| Timer | Countdown timer counts down when player starts quiz | Yes |
 | Answers  | Buttons change color upon answering question | Yes |
           
 
@@ -286,16 +290,24 @@ View commit history [here]()
 
 <br>
 
-## Deployment
+## Deployment and development
 
 Website was deployed on Github:
 
 1. Log in to GitHub and locate the [GitHub Repository 
-find-the-origin]()
+find-the-origin](https://njorogetracy.github.io/find-the-origin/)
 2. Go to "Settings" Button on the menu.
 3. Scroll down the Settings page until you locate the "Pages" in "Code and automation" section.
 4. Under "Source", click the dropdown called "Select branch:" and select "Main", click the dropdown called "Select folder" and select "/root".
 5. The page will automatically refresh and you receive message "Your site is published at". 
+
+### Forking the Github Repository
+
+To make a copy of the original repository on a GitHub account, ao as to view and/or make changes without affecting the original repository use the following steps...
+
+1. Log in to GitHub and locate the repository find-the-origin
+2. At the top of the Repository (not the top of the page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
 
 ![Deployed Site]()
 
