@@ -63,7 +63,8 @@ console.log(shuffled);
 // start quiz
 let e = 0;
 let score = 0;
-let countdown = 30;
+let countdown = 60;
+let countdownInterval;
 
 /**
  * This function starts the quiz, 
@@ -76,7 +77,7 @@ function startQuiz(event) {
   let gameStart = document.getElementById("game");
     // game timer 
     if (e === 0 || countdown === 0) {
-      const countdownInterval = setInterval(() => {
+      countdownInterval = setInterval(() => {
         console.log(countdown);
         countdown--;
         const timerDisplay = document.querySelector("h1#timer");
@@ -87,7 +88,12 @@ function startQuiz(event) {
           endGame(score);
         }
       }, 1000);
-    }
+    };
+  if (e === 10) {
+    clearInterval(countdownInterval);
+    countdown = 0;
+    endGame(score)
+  } else {
   startButton.classList.add('hide');
   gameStart.innerHTML = `
     <div class="text-center text-light score-area">
@@ -126,7 +132,8 @@ function startQuiz(event) {
    let answers = document.querySelectorAll('.btn');
      for (let j=0; j<4; j++) {
       answers[j].addEventListener("click", answerSelect);
-   }
+    }
+   }  
 }
 
 /**
@@ -147,12 +154,11 @@ function answerSelect(event) {
     correctAns.style.backgroundColor = "green";
   }
   if (e != 0 || countdown != 0) {
-    setTimeout(startQuiz, 1000); 
-  } else {
-   endGame(score);
-  }
-  
-}
+     setTimeout(startQuiz, 1000);
+   } else {
+  endGame(score);
+   }
+};
 
 /**
  * This functions displays score anfter game ends
@@ -166,11 +172,10 @@ function endGame(score) {
   </h1>
   <div class="game-space question-container container-fluid mt-4  text-light text-center">
   <h1>THE END</h1>
-  <h2> You're score is ${score}</h2>
+  <h2> Your score is ${score}</h2>
   <button onclick="location.href='index.html'" type="button" class="btn btn-primary btn-lg" id="restart-game">Restart</button>
   </div>`;
   console.log(restartGame);
-
 }
 
 
