@@ -91,7 +91,7 @@ As a returning-user I want to:
 
 ### Colour 
 
-This website uses a palette of pastel colours that are subtle yet eye catching to attract and keep users in the website. This palette was created using [Colorhunt]() website
+This website uses a palette of pastel colours that are subtle yet eye catching to attract and keep users in the website. This palette was created using [Colorhunt](https://coolors.co/00e7ff-100000-ffffff) website
 
 ![Image of colour palette from colorhunt.co]()
 
@@ -215,13 +215,6 @@ For Desktops:
 ![Gamespace lighthouse screeshot]()
 </details>
 
-<details>
-<summary>Score-area</summary>
-
-![Score-area lighthouse screeshot]()
-</details>
-
-
 <br>
 
 For Mobile Devices
@@ -235,13 +228,13 @@ For Mobile Devices
 </details>
 
 <details>
-<summary>Gamespace</summary>
+<summary>Rulespage</summary>
 
 ![Gamespace lighthouse screeshot]()
 </details>
 
 <details>
-<summary>Score-area</summary>
+<summary>Gamespace</summary>
 
 ![Score-area lighthouse screeshot]()
 </details>
@@ -252,13 +245,7 @@ For Mobile Devices
 <details>
 <summary>Startpage</summary>
 
-![Homepage W3C testing screeshot]()
-</details>
-
-<details>
-<summary>Game-space</summary>
-
-![Workshops W3C testing screeshot]()
+![Game W3C testing screeshot]()
 </details>
 
 <br>
@@ -279,14 +266,28 @@ Website was tested manually on these browsers: Google Chrome, Edge, Firefox, Saf
 
 ### Bugs
 
+#### Fixed Bugs
+- Score Area content was overflowing outside of the div in medium to small screens, this was fixed by adding a display flex property
+- Restart button was not being displayed in the end game page, this was fixed by creating it in the index.html and adding it to end page usig innerhtml in javascript
+
+
+#### Unfixed Bugs
+- User can pick more that one question
+[question select bug]()
 
 <br>
+
+### Future Updates
+I would like to add the following updates in the future:
+
+1. Database to store scores for the played game
+2. Different levels of playing the game with options where user can pick which level they want
 
 ## Version Control
 
 Version control has been maintained using Git. The code written for this website has been updated via regular commits to Github. These serve as a record of development and changes to the varying pages of html and css.
 
-View commit history [here]()
+View commit history [here](https://github.com/Njorogetracy/find-the-origin/commits/main)
 
 <br>
 
@@ -309,7 +310,7 @@ To make a copy of the original repository on a GitHub account, ao as to view and
 2. At the top of the Repository (not the top of the page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
-![Deployed Site]()
+![Deployed Site](https://njorogetracy.github.io/find-the-origin/)
 
 <br>
 
@@ -318,21 +319,22 @@ To make a copy of the original repository on a GitHub account, ao as to view and
 ### Code
 
 - Code Institute README.md template has been used to create this document
-- [YouTube]() 
-- [W3schools]() 
-- [FreeCodeCamp]()  
-- [CSS Tricks]()
+- [YouTube](https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified) for the questions script format 
+- [W3schools](https://www.w3schools.com/howto/howto_js_countdown.asp) creating a countdown timer
+  
 
 ### Media
 
- Images were sourced from [Pexels.com](https://pexels.com/):
- - [Photo by ... from Pexels:]()
+ Images were sourced from [Pexels.com](https://pexels.com/)
+ - [Photo by Rodolfo Clix from Pexels:](https://www.pexels.com/photo/five-bulb-lights-1036936/)
 
  <br>
 
  ## Acknowledgements 
 
  - My Mentor Mitko Bachvarov for the helpul guidance, resources and feedback offered thoughout my project
+ - My colleague Massimo Pilli for helping me debug my code 
+ - My colleague Mia Rasmussen for the feedback on optimising my site for mobiles after testing the game
  - Code Institute Slack community for the resourceful information and resources
  - Code Institute Tutor Support for being very generous with assitance and guidance in some areas in my project
  
