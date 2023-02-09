@@ -63,7 +63,7 @@ console.log(shuffled);
 // start quiz
 let e = 0;
 let score = 0;
-let countdown = 10;
+let countdown = 30;
 
 /**
  * This function starts the quiz, 
