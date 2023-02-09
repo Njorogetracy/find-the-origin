@@ -5,6 +5,7 @@
   let ruleBtn = document.getElementById("instructions");
   let closeModal = document.getElementById("close-rules");
   let gameArea = document.querySelector('game-space')
+  let restartGame = document.getElementById('button-restart')
 
   myModal.addEventListener("click", function () {
     console.log("you clicked a button");
@@ -12,6 +13,7 @@
     introPage.style.display = 'none';
     startButton.style.display = 'none';
     ruleBtn.style.display = 'block';
+    restartGame.style.display ="none";
     showInstructions();
     console.log('hey modal');
   });
@@ -89,13 +91,10 @@ function startQuiz(event) {
   startButton.classList.add('hide');
   gameStart.innerHTML = `
     <div class="text-center text-light score-area">
-    <p>
-        <strong>
-            Score
-        </strong>
-    </p>
-    <h1>: ${score}/10. </h1>
+      <strong>
+    <h1>Score:${score}/10 </h1>
     <h1>Timer: ${countdown} </h1>
+    </strong>
   </div>
   <div class="game-space question-container container-fluid mt-4 text-center">
     <br>
@@ -159,17 +158,19 @@ function answerSelect(event) {
  * This functions displays score anfter game ends
  */
 function endGame(score) {
+  let restartGame = document.querySelector('#button-restart');
   let gameStart = document.getElementById("game");
-  var newBtn = document.createElement("Button");
-  newBtn.innerText = "Restart";
-  document.body.append(newBtn);
-  console.log(newBtn)
   gameStart.innerHTML = `
+  <h1 class="heading text-center display-1 text-light">
+    Lets get Quizycall!
+  </h1>
   <div class="game-space question-container container-fluid mt-4  text-light text-center">
   <h1>THE END</h1>
   <h2> You're score is ${score}</h2>
+  <button onclick="location.href='index.html'" type="button" class="btn btn-primary btn-lg" id="restart-game">Restart</button>
   </div>`
-  //restartGame();
+  console.log(restartGame);
+
 }
 
 
