@@ -64,7 +64,7 @@ console.log(shuffled)
 // start quiz
 let e = 0;
 let score = 0;
-let countdown;
+let countdown = 10;
 
 /**
  * This function starts the quiz, 
@@ -77,10 +77,11 @@ function startQuiz(event) {
   let gameStart = document.getElementById("game");
     // game timer 
     if (e === 0 || countdown === 0) {
-      countdown = 10;
       const countdownInterval = setInterval(() => {
         console.log(countdown);
         countdown--;
+        const timerDisplay = document.querySelector("h1#timer");
+        timerDisplay.textContent = `Timer: ${countdown}`;
         if (countdown === 0) {
           clearInterval(countdownInterval);
           console.log("Countdown is over!");
@@ -93,7 +94,7 @@ function startQuiz(event) {
     <div class="text-center text-light score-area">
       <strong>
     <h1>Score:${score}/10 </h1>
-    <h1>Timer: ${countdown} </h1>
+    <h1 id="timer">Timer: ${countdown} </h1>
     </strong>
   </div>
   <div class="game-space question-container container-fluid mt-4 text-center">
