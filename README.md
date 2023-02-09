@@ -3,9 +3,9 @@
 
 let's get quizycall is a game targeted towards people who love to satisfy their quest for knwoledge. It aims to educate and entertain its users through the questions asked within the quiz.
 
-![Resposive image of homepage on different devices with different screen sizes]()
+![Resposive image of homepage on different devices with different screen sizes](docs/readme-images/I-AM-RESPONSIVE.png)
 
-[Visit the Let's get quizycall here]()
+[Visit the Let's get quizycall here](https://njorogetracy.github.io/find-the-origin/index.html)
 
 <br>
 
@@ -91,9 +91,9 @@ As a returning-user I want to:
 
 ### Colour 
 
-This website uses a palette of pastel colours that are subtle yet eye catching to attract and keep users in the website. This palette was created using [Colorhunt](https://coolors.co/00e7ff-100000-ffffff) website
+This website uses a palette of pastel colours that are subtle yet eye catching to attract and keep users in the website. This palette was created using [Coolors](https://coolors.co/00e7ff-100000-ffffff) website
 
-![Image of colour palette from colorhunt.co]()
+![Image of colour palette from colorhunt.co](docs/readme-images/color-pallete.png)
 
 <br>
 
@@ -104,7 +104,7 @@ This website uses a palette of pastel colours that are subtle yet eye catching t
 - Courrier Prime: Used for main body text
 
 
-These fonts were chosen to be in order to give the website a simple and clean look. They were also chosen to ensure accessibility and readability 
+These font was chosen to be in order to give the website a simple and clean look. They were also chosen to ensure accessibility and readability 
 
 <br>
 
@@ -112,7 +112,7 @@ These fonts were chosen to be in order to give the website a simple and clean lo
 
 Wireframes were created using [Balsamiq Wireframing Software](https:/balsamiq.com/)
 
-View wireframes [PDF file here]()
+View wireframes [PDF file here](https://github.com/Njorogetracy/find-the-origin/blob/main/docs/readme-images/quiz-wireframes.pdf)
 
 ## Features 
 
@@ -122,7 +122,7 @@ This website consists of a homepage, rules page, quizpage and endgame page.
 
 - Background image for the website
 
-![Background image](docs/readme-images/images/background-photo.jpeg)
+![Background image](assets/css/images/background-photo.jpeg)
 
 ### Game container
 
@@ -138,7 +138,7 @@ This website consists of a homepage, rules page, quizpage and endgame page.
 
 ### Score Area
 
-![Score area]()
+![Score area](docs/readme-images/score-area.png)
 
 <br>
 
@@ -152,7 +152,7 @@ This website has been written using HTML, CSS, BOOTSTRAP & JAVASCRIPT
 - Github: Storing and hosting my code/repository
 - Gitpod: Code editor for writing my code and storing other images/files
 - Bootstrap: creating the modal and the buttons
-- Colorhunt: For choosing the palette to be used in the website
+- Coolors: For choosing the palette to be used in the website
 - Google Fonts: To import the fonts used throughout the site
 - Google DevTools: Used throughout the site's creation to test responsiveness and adjust layout
 - Balsamiq: Wireframe software
@@ -200,19 +200,19 @@ For Desktops:
 <details>
 <summary>Startpage</summary>
 
-![Startpage lighthouse screeshot]()
+![Startpage lighthouse screeshot](docs/readme-images/desktop-home.png)
 </details>
 
 <details>
 <summary>Rulespage</summary>
 
-![Rulespage lighthouse screeshot]()
+![Rulespage lighthouse screeshot](docs/readme-images/desktop-rules.png)
 </details>
 
 <details>
 <summary>Gamespace</summary>
 
-![Gamespace lighthouse screeshot]()
+![Gamespace lighthouse screeshot](docs/readme-images/desktop-quiz.png)
 </details>
 
 <br>
@@ -221,44 +221,42 @@ For Mobile Devices
 
 ### Validation
 
-### HTML<details>
+<details>
 <summary>Startpage</summary>
 
-![Startpage lighthouse screeshot]()
+![Startpage lighthouse screeshot](docs/readme-images/mobile-home.png)
 </details>
 
 <details>
 <summary>Rulespage</summary>
 
-![Gamespace lighthouse screeshot]()
+![Gamespace lighthouse screeshot](docs/readme-images/mobile-rules.png)
 </details>
 
 <details>
 <summary>Gamespace</summary>
 
-![Score-area lighthouse screeshot]()
-</details>
-
-
- [W3C Markup Validator](https://validator.w3.org/nu/) - validation service used. 
-
-<details>
-<summary>Startpage</summary>
-
-![Game W3C testing screeshot]()
+![Score-area lighthouse screeshot](docs/readme-images/mobile-questions.png)
 </details>
 
 <br>
 
-### CSS
+### HTML
+<details>
+<summary>Game</summary>
 
- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_address)  - validation service used. 
+![Game W3C testing screeshot](docs/readme-images/html-validation.png)
+</details>
+
+### CSS
 
  <details>
 <summary>Stylesheet</summary>
 
-![Screenshot of W3C Jigsaw testing for Let's get quizycall CSS Stylesheet]()
+![Screenshot of W3C Jigsaw testing for Let's get quizycall CSS Stylesheet](docs/readme-images/css-validation.png)
 </details>
+
+<br>
 
 ### Browser Compatibility
 
@@ -273,7 +271,10 @@ Website was tested manually on these browsers: Google Chrome, Edge, Firefox, Saf
 
 #### Unfixed Bugs
 - User can pick more that one question
-[question select bug]()
+<details>
+
+![question select bug](docs/readme-images/question-select.jpg)
+</details>
 
 <br>
 
