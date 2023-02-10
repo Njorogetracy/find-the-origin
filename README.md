@@ -53,7 +53,7 @@ Let's get quizycall is a quiz website created in partial fulfilment with the sec
 
 ### User Goals
 - Easily navigate through the game
-- Reand and understand the rules of the game
+- Read and understand the rules of the game
 - Get questions upon starting the game
 - See how much time they have left to finish the quiz
 - See correct and wrong answers while playing the game
@@ -104,7 +104,7 @@ This website uses a palette of pastel colours that are subtle yet eye catching t
 - Courrier Prime: Used for main body text
 
 
-These font was chosen to be in order to give the website a simple and clean look. They were also chosen to ensure accessibility and readability 
+This font was chosen to be in order to give the website a simple and clean look. This was also chosen to ensure accessibility and readability 
 
 <br>
 
@@ -134,7 +134,7 @@ This website consists of a homepage, rules page, quizpage and endgame page.
 
 ### Quiz area
 
-![Quiz](docs/readme-images/question-container.png)
+![Quiz](docs/readme-images/question-area.png)
 
 ### Score Area
 
@@ -254,6 +254,7 @@ For Mobile Devices
 <summary>Stylesheet</summary>
 
 <details>
+
 ![Screenshot of W3C Jigsaw testing for Let's get quizycall CSS Stylesheet](docs/readme-images/css-validation.png)
 </details>
 
@@ -280,7 +281,7 @@ Website was tested manually on these browsers: Google Chrome, Edge, Firefox, Saf
 
 #### Fixed Bugs
 - Score Area content was overflowing outside of the div in medium to small screens, this was fixed by adding a display flex property
-- Restart button was not being displayed in the end game page, this was fixed by creating it in the index.html and adding it to end page usig innerhtml in javascript
+- Restart button was not being displayed in the end game page, this was fixed by creating it in the index.html and adding it to end page using innerhtml in javascript
 - The countdown timer was still running after game ended
 <details>
 
@@ -306,11 +307,12 @@ Website was tested manually on these browsers: Google Chrome, Edge, Firefox, Saf
 I would like to add the following updates in the future:
 
 1. Database to store scores for the played game
-2. Different levels of playing the game with options where user can pick which level they want
+2. Different levels of difficulty while playing the game with options where user can pick which level they want
+3. A function to enable the user to only pick one answer per question
 
 ## Version Control
 
-Version control has been maintained using Git. The code written for this website has been updated via regular commits to Github. These serve as a record of development and changes to the varying pages of html and css.
+Version control has been maintained using Git. The code written for this website has been updated via regular commits to Github. These serve as a record of development and changes to the varying pages of html, css and javascript.
 
 View commit history [here](https://github.com/Njorogetracy/find-the-origin/commits/main)
 
@@ -335,7 +337,7 @@ To make a copy of the original repository on a GitHub account, ao as to view and
 2. At the top of the Repository (not the top of the page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
-![Deployed Site](https://njorogetracy.github.io/find-the-origin/)
+[Deployed Site](https://njorogetracy.github.io/find-the-origin/)
 
 ### Cloning the Github Repository
 
@@ -347,7 +349,7 @@ To clone the original repository:
 4. Type git clone in your terminal, and then paste the URL you copied
 5. Press Enter to create your local clone.
 
-![Deployed Site](https://njorogetracy.github.io/find-the-origin/)
+[Deployed Site](https://njorogetracy.github.io/find-the-origin/)
 
 
 <br>
