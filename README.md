@@ -138,7 +138,7 @@ This website consists of a homepage, rules page, quizpage and endgame page.
 
 ### Score Area
 
-![Score area](docs/readme-images/score-area.png)
+![Score area](docs/readme-images/end-page.png)
 
 <br>
 
@@ -260,7 +260,15 @@ For Mobile Devices
 ### Jshint 
 <summary>Javascript</summary>
 
-![JS validation screenshot]()
+<details>
+
+![JS validation question container screenshot](docs/readme-images/question-jshint.png)
+</details>
+
+<details>
+
+![JS validation question logic screenshot](docs/readme-images/logic-jshint.png)
+</details>
 
 <br>
 
@@ -273,6 +281,16 @@ Website was tested manually on these browsers: Google Chrome, Edge, Firefox, Saf
 #### Fixed Bugs
 - Score Area content was overflowing outside of the div in medium to small screens, this was fixed by adding a display flex property
 - Restart button was not being displayed in the end game page, this was fixed by creating it in the index.html and adding it to end page usig innerhtml in javascript
+- The countdown timer was still running after game ended
+<details>
+
+![countdown timer bug](docs/readme-images/timer-bug.jpg)
+</details>
+- Fixed countdown timer image below:
+<details>
+
+![fixed countdown timer](docs/readme-images/fixed-timer.png)
+</details>
 
 
 #### Unfixed Bugs
