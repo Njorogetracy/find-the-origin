@@ -131,6 +131,7 @@ function startQuiz(event) {
 /**
  * This functions displays the correct answer 
  * after user selects and answer
+ * sets the next question 
  */
 function answerSelect(event) {
   let selected = event.target;
