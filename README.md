@@ -242,15 +242,16 @@ For Mobile Devices
 <br>
 
 ### HTML
-<details>
+
 <summary>Game</summary>
+
+<details>
 
 ![Game W3C testing screeshot](docs/readme-images/html-validation.png)
 </details>
 
 ### CSS
 
- 
 <summary>Stylesheet</summary>
 
 <details>
@@ -287,7 +288,7 @@ Website was tested manually on these browsers: Google Chrome, Edge, Firefox, Saf
 
 ![countdown timer bug](docs/readme-images/timer-bug.jpg)
 </details>
-- Fixed countdown timer image below:
+ Fixed countdown timer image below:
 <details>
 
 ![fixed countdown timer](docs/readme-images/fixed-timer.png)
