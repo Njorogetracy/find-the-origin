@@ -7,19 +7,16 @@
   let restartGame = document.getElementById('button-restart');
 
   myModal.addEventListener("click", function () {
-    console.log("you clicked a button");
     myModal.style.display = 'none';
     introPage.style.display = 'none';
     startButton.style.display = 'none';
     ruleBtn.style.display = 'block';
     restartGame.style.display ="none";
     showInstructions();
-    console.log('hey modal');
   });
 
   function showInstructions() {
     ruleBtn.style.display = 'block';
-    console.log('show rules');
   }
 
   closeModal.addEventListener("click", function () {
@@ -58,7 +55,6 @@ function shuffleNum(){
 return randomNumber;
  }
 let shuffled = shuffleNum();
-console.log(shuffled);
 
 // start quiz
 let e = 0;
@@ -78,21 +74,19 @@ function startQuiz(event) {
     // game timer 
     if (e === 0 || countdown === 0) {
       countdownInterval = setInterval(() => {
-        console.log(countdown);
         countdown--;
         const timerDisplay = document.querySelector("h1#timer");
         timerDisplay.textContent = `Timer: ${countdown}`;
         if (countdown === 0) {
           clearInterval(countdownInterval);
-          console.log("Countdown is over!");
           endGame(score);
         }
       }, 1000);
-    };
+    }
   if (e === 10) {
     clearInterval(countdownInterval);
     countdown = 0;
-    endGame(score)
+    endGame(score);
   } else {
   startButton.classList.add('hide');
   gameStart.innerHTML = `
@@ -120,12 +114,10 @@ function startQuiz(event) {
       answerButton.innerHTML+=`
     <button class="btn text-light btn-primary correct">${answerEd}</button>
      <br>`;
-     console.log(answerEd);
     } else {
     answerButton.innerHTML+=`
     <button class="btn text-light btn-primary">${answerEd}</button>
      <br>`;
-     console.log(answerEd);
   }
    } 
    e++;
@@ -143,14 +135,11 @@ function startQuiz(event) {
 function answerSelect(event) {
   let selected = event.target;
   if (selected.classList.contains("correct")) {
-    console.log("Correct!");
     score+=1;
     selected.style.backgroundColor = "green";
   } else {
-    console.log("Wrong");
     selected.style.backgroundColor = "red";
     let correctAns = document.getElementsByClassName("correct")[0];
-    console.log(correctAns);
     correctAns.style.backgroundColor = "green";
   }
   if (e != 0 || countdown != 0) {
@@ -158,10 +147,11 @@ function answerSelect(event) {
    } else {
   endGame(score);
    }
-};
+}
 
 /**
  * This functions displays score anfter game ends
+ * Displays the retarst button
  */
 function endGame(score) {
   let restartGame = document.querySelector('#button-restart');
@@ -175,7 +165,7 @@ function endGame(score) {
   <h2> Your score is ${score}</h2>
   <button onclick="location.href='index.html'" type="button" class="btn btn-primary btn-lg" id="restart-game">Restart</button>
   </div>`;
-  console.log(restartGame);
+  return restartGame;
 }
 
 
